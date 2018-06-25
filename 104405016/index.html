@@ -15,21 +15,101 @@
             background-color: #fff;
         }
 
-        a {
-            color: #2d2d2d;
-            text-decoration: none;
-            border-bottom: 1px solid #c71b0a;
+        header>span {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 2.25;
+        }
+
+        header>h1 {
+            margin-top: 11px;
+            font-size: 34px;
+            font-weight: bold;
+            line-height: 1.32;
+        }
+
+        header>table {
+            width: 100%;
         }
 
         header,
         article>header {
             max-width: calc(270/320*100%);
+            margin: 0 auto
+        }
+
+        article {
+            color: #2d2d2d;
+        }
+
+        article>header>span {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 2.25;
+        }
+
+        article>p,
+        article>h2,
+        article>blockquote,
+        article>ul,
+        article figcaption,
+        article>div,
+        article>header {
+            max-width: calc(270/320*100%);
             margin: 0 auto;
         }
 
-        @media screen and (min-width: 768px) and (max-width: 1023px) {
+        article>p,
+        article>blockquote {
+            font-size: 18px;
+            line-height: 2.0;
+            letter-spacing: 0.9px;
+            margin-top: 40px;
+            text-align: justify;
+        }
+
+        article>blockquote {
+            padding-left: 21px;
+            color: #6d6d6d;
+            border-left: 1px solid #6d6d6d;
+        }
+
+
+        article figcaption {
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.8px;
+            color: #6d6d6d;
+            margin-top: 15px;
+        }
+
+        article>h2 {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1.1px;
+            line-height: 1.64;
+            margin-top: 40px;
+        }
+
+
+
+        @media screen and (min-width:1024px) {
             header {
-                width: 678px;
+                width: 900px;
+            }
+            article,
+            article>header {
+                max-width: 900px;
+                margin: 0 auto;
+            }
+
+        }
+
+
+
+        @media screen and (min-width:768px) and (max-width:1023px) {
+            header {
+                width: 678px
             }
 
             article,
@@ -39,41 +119,19 @@
             }
         }
 
-        @media screen and (min-width: 1024px) {
-            header {
-                width: 900px;
-            }
-
-            article,
-            article>header {
-                max-width: 900px;
-                margin: 0 auto;
-            }
-        }
-
-        header>table {
-            width: 100%;
-        }
-
-        article>header>span {
-            font-size: 16px;
-            font-weight: bold;
+        .authors {
+            margin-right: 30px;
+            font-size: 15px;
             line-height: 2.25;
         }
 
-        article>header>h1 {
-            margin-top: 11px;
-            font-size: 34px;
-            font-weight: bold;
-            line-height: 1.32;
-        }
-
-        article {
+        a {
             color: #2d2d2d;
-        }
+            text-decoration: none;
+                    }
 
         article>figure {
-            margin: 40px 0 0 0;
+            margin: 0;
         }
 
         @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -81,14 +139,6 @@
                 width: 678px;
                 margin-left: auto;
                 margin-right: auto;
-            }
-
-            .float-right {
-                float: left;
-                width: 300px;
-                margin-top: 40px;
-                margin-right: 40px;
-                margin-bottom: 50px;
             }
         }
 
@@ -108,79 +158,17 @@
             }
         }
 
-        article>p,
-        article>h2,
-        article>blockquote,
-        article>ul,
-        article figcaption,
-        article>div,
-        article>header {
-            max-width: calc(270/320*100%);
-            margin: 0 auto;
+        body {
+            font-family: "Microsoft JhengHei", "Noto Sans TC", "PingFang TC", "Apple LiGothic Medium", Roboto, "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+            background-color: #F1F1F1;
         }
 
-        @media screen and (min-width: 768px) and (max-width: 1023px) {
-            article>p,
-            article>h2,
-            article>blockquote,
-            article>ul,
-            article figcaption,
-            article>div,
-            article>header,
-            article>ul {
-                width: 550px;
-            }
-        }
+        .intro {
+            margin-bottom: 30px;
+            margin-left: calc(160/1024*100%);
+            text-align: justify;
+            max-width: calc(570/756*100%);
 
-        @media screen and (min-width: 1024px) {
-            article>p,
-            article>h2,
-            article>blockquote,
-            article>ul,
-            article figcaption,
-            article>div,
-            article>header {
-                max-width: 756px;
-            }
-            article>ul {
-                width: 700px;
-            }
-        }
-
-        article>ul {
-            width: 100%;
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        article>p,
-        article>blockquote {
-            font-size: 18px;
-            line-height: 2.0;
-            letter-spacing: 0.9px;
-            margin-top: 40px;
-        }
-
-        article>blockquote {
-            padding-left: 21px;
-            color: #6d6d6d;
-            border-left: 1px solid #6d6d6d;
-        }
-
-        article>h2 {
-            font-size: 22px;
-            font-weight: bold;
-            letter-spacing: 1.1px;
-            line-height: 1.64;
-            margin-top: 40px;
-        }
-
-        article figcaption {
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.8px;
-            color: #6d6d6d;
-            margin-top: 15px;
         }
 
         .header {
@@ -191,19 +179,13 @@
         .logo {
             width: 100px;
             height: 25px;
-            background-color: #e1e1e1;
+            background-color: #e1e1e1
         }
 
         .menu {
             width: 22px;
             height: 22px;
             background-color: #e1e1e1;
-        }
-
-        .author {
-            margin-right: 30px;
-            font-size: 15px;
-            line-height: 2.25;
         }
 
         .introduction {
@@ -245,190 +227,256 @@
             line-height: 1.5;
         }
 
-        footer {
-            background-color: #bfbfbf;
-            min-height: 300px;
+        .title-box {
+            background-color: #dcdcdc;
+            position: relative;
+            height: 80px;
+            max-width: 900px
         }
 
-        footer>table {
-            border-spacing: 45px;
-            width: 100%;
+        .title {
+            color: #E59F23;
+            font-size: 30px;
+            font-weight: bold;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -30%);
         }
 
-        .footer-circle {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background-color: #777;
-            margin: 0 auto;
+        .flex-article {
+            background-color: #dcdcdc;
+            min-height: 320px;
         }
 
-        .footer-text {
+        .article-photo {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        .text-box {
+            background-color: #fff;
+            position: absolute;
+            height: 100px;
+            width: 250px;
+            margin-left: 15px;
+            margin-top: -16px;
+        }
+
+        .article-text {
             margin-top: 15px;
-            font-size: 18px;
+            font-size: 20px;
             text-align: center;
-            color: #777;
+            color: #2d2d2d;
+            max-width: 250px;
+            padding-left: 30px;
+            line-height: 1.5;
+            position: relative;
+            font-weight: bold;
+        }
+
+        .flex-article {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1024px;
+            margin: 0 auto;
+            padding-top: 0px;
+            flex-wrap: wrap
+        }
+
+        .flex-article>div {
+            min-width: 200px;
+            margin-bottom: 48px
+        }
+
+        @media screen and (max-width:768px) {
+            .flex-article {
+                max-width: cala(600/768*100%);
+            }
         }
 
 
-        @media screen and (max-width: 767px) {
-            table.hidden-on-mobile {
-                display: none;
-            }
-
-            table.shown-on-mobile {
-                display: table;
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            article>p,
+            article>h2,
+            article>blockquote,
+            article>ul,
+            article figcaption,
+            article>div,
+            article>header,
+            article>ul {
+                width: 550px;
             }
         }
 
-        @media screen and (min-width: 768px) {
-            table.hidden-on-mobile {
-                display: table;
-                max-width: 770px;
-                margin-left: auto;
-                margin-right: auto;
+        @media screen and (min-width: 1024px) {
+            article>p,
+            article>h2,
+            article>blockquote,
+            article>ul,
+            article figcaption,
+            article>div,
+            article>header {
+                max-width: 756px;
             }
-
-            table.shown-on-mobile {
-                display: none;
+            article>ul {
+                width: 700px;
             }
         }
     </style>
 
 </head>
 
-<body>
+<body style="font-family: Microsoft JhengHei, " Noto Sans TC ", "PingFang TC ", "Apple LiGothic Medium ", Roboto, "Lucida
+    Grande ", "Lucida Sans Unicode ", sans-serif; background-color: #fff">
+    <header>
+        <figure style="margin-top: 20px; margin-bottom: 30px ; width: 100%  height: calc(768/497*100%)">
+            <img src="desktop-02.png" alt="header" width="100%" />
+        </figure>
+    </header>
+    <!--
     <header class="header">
-        <table>
+        <table style="width:100% ">
             <tbody>
                 <tr>
                     <td>
                         <div class="logo"></div>
                     </td>
-                    <td style="width:22px;">
+                    <td style="width:22px">
                         <div class="menu"></div>
                     </td>
                 </tr>
             </tbody>
         </table>
-    </header>
+    </header>-->
+
     <article>
-        <header>
-            <span>憂喜玩連字</span>
-            <h1>晃果位生囧，火鳥為存利冥誕肩合相氣零失</h1>
-        </header>
-        <div style="margin-bottom:15px">
-            <span class="author">文
-                <b>
-                    <a href="https://www.twreporter.org/author/571de7b7dae62379576d7f35" target="_blank">陳貞樺</a>
-                </b>
-            </span>
-            <span class="author">攝影
-                <b>
-                    <a href="https://www.twreporter.org/author/5733e89d8c0c261000b3f6f3" target="_blank">林佑恩</a>
-                </b>
-            </span>
+        <div style=" width: 100% ; max-width :900px ; margin: 0 auto ; height: 2px ; background-color: #2d2d2d ">
+
         </div>
-        <figure>
-            <img src="leading.jpeg" alt="leading image of this article" width="100%" />
-        </figure>
-        <p class="introduction">上的去家電夫從入金，問吸了；力中要人朋基重吃因影的學會開方何嚴王紅經到市， 示正假除像土你何加施依邊精一相究眾兒學的一劇；的太去縣分一，間行天， 外人臺兒冷力機得運方房？利看式調痛已和爸時紙物。生量完：先工分家現、 能是安回式太子我院證過當果功眼考問。
-        </p>
-        <p>
-            今進往的事像自在又治多我求開禮也告我作廣，古了亞，度往廠可至節無， 有以住心哥畫青有受學應小小：日的比亞新是媽心好的要人變辦他且點面。 該聯很道：聽利陽里、不如說手吸的文如出甚位月消許方到行的說小。 排父有法蘭一。子面山收光高長何和師，經過些持了民緊星進，
-            理舉壓全模去家，黑到學驚來居孩？離到高它，想招同黃說友光地嗎是！ 統一小背理……海紀這以們紅受笑工事切無子果護爭面想取一的起所孩須看政打命政； 健成文只員量李。
-        </p>
 
-        <p>
-            這高量源當還社海那防福靈示在容你不像老議的物入教不幾此言。種線是上；心都通的……選何引主一著每無。身山無這情轉年方之；有此臺到談開排上、於雨式在乎，境天了他過想處，之構情美整太，海變了打主廠有居以頭代事歡，區吃國：事有要經話方；工起的名跑合石能醫不著……樓小體歌，的本減我想現臺格情調海期如表有平待。
-        </p>
-        <figure>
-            <img src="img-1.jpeg" alt="一顆鳳梨直挺挺地豎立在海邊" width="100%" />
-            <figcaption>得我母它刻同雨麼都園真上男、不河組專為，那身就的足再人就望業？</figcaption>
+        <a href="https://ws840427.wixsite.com/nccunews" target="_blank">
+        <figure style="margin-top: 30px; width: 100% ">
+            <img src="cloth.jpg" alt="leading image of this article" width="100%" />
         </figure>
-        <h2>訃音戲水尾聲已定欣宜</h2>
-        <p style="margin-top:30px">
-            政聲型？驗須童自拉，教起生性語實叫一父音係這其理委生做向性開畫年；嚴道新現真態實廣以新定行坡資才月；園易每自要壓會公謝室不文條行他意……業感斯裡似見此情各少媽現全消火力藥個說海為是充可口食結自了為心人地麼轉交生上新樓……作料去以養當兒書眾你消就統幾美天就寶一建心司；得我母它刻同雨麼都園真上男、不河組專為，那身就的足再人就望業？著請求是錢，體業失製起總們不中來護和產魚別還活精對速，學賣族會已媽是適歌像運題腳病息為帶，資的林花動檢包大初著了這事農信石家聽放代研了就好發方長是約年施家達想病給常林下。圖和死水不無不在的二會上開解地排讀備了之比有我又苦力之是資花，她濟害是車海明請站拉，著容定中整勢什民！老是頭水全怎有……他中的問我就……年老通醫這類的說戲，息古叫乎，到劇學就行？
-        </p>
-        <blockquote>
-            友直刻國與，化水種外展地。年們過灣視世了客光氣河風生開但電人念教示這。續但遠和是布取，來謝下情喜動山形他陽覺，早治度問了點打。居決世具們不像員吃。
-        </blockquote>
-        <p>
-            年一健，的斷中者功天兒中來會……不突離示優黃地底位結上和節美：經那都知。民成想流稱：意風以，小法持女影毒印樣正工小？勢里是文利：導些曾，魚朋也老示也議山交如安，會聲高有母黃濟信治曾父化孩來……又的大開甚新馬用書布辦雙小兒法久海操公日險然。看自下？友直刻國與，化水種外展地。年們過灣視世了客光氣河風生開但電人念教示這。續但遠和是布取，來謝下情喜動山形他陽覺，早治度問了點打。居決世具；麼本地我物車象的生道選安兩洲河們不像員吃。
-        </p>
-        <p>就靜發能中然成背要陽國有科加要物的天、有大代我教，從民交望在光商功特我者！百有女公角小、有高性樣紀爸二際輕王麼怎身其他願人技們美南統金物訴原筆把動無，為富眾排樣說水而到工收出他。變海問專到過：然點那其議呢。界樣身文命切明靈設工日們，推點冷國裡、這家破市成來我還公原可才，民人一內臺放大一何因在究女筆唱大……者必資牛發該巴男並如的個校出散紅無態眾說……是能。
-        </p>
-        <figure class="float-right">
-            <img src="img-2.jpeg" alt="老鷹翱翔於天際" width="100%" />
-            <figcaption>得我母它刻同雨麼都園真上男、不河組專為，那身就的足再人就望業？</figcaption>
-        </figure>
-        <p>
-            友直刻國與，化水種外展地。年們過灣視世了客光氣河風生開但電人念教示這。續但遠和是布取，來謝下情喜動山形他陽覺，早治度問了點打。居決世具們不像員吃。年們過灣視世了客光氣河風生開但電人念教示這，早治度問了點打。
-        </p>
-        <p style="margin-bottom: 60px;">
-            友直刻國與，化水種外展地。年們過灣視世了客光氣河風生開但電人念教示這。續但遠和是布取，來謝下情喜動山形他陽覺，早治度問了點打。居決世具們不像員吃。年們過灣視世了客光氣河風生開但電人念教示這，早治度問了點打。
-        </p>
-        <div class="related-text" style="clear:both;">延伸閱讀</div>
-        <ul class="related-items">
-            <li class="related-item">
-                <img src="img-1.jpeg"></img>
-                <div>延伸閱讀一：，化水種外展地。年們過灣視世了客光氣河風生開但電人念教示這</div>
-            </li>
-            <li class="related-item">
-                <img src="img-1.jpeg"></img>
-                <div>延伸閱讀二:刻同雨麼都園真上男、不河組專為，那身就的足再人就</div>
-            </li>
-        </ul>
+        <h1 style="margin-top: 30px; margin-left: calc(157/1024*100%) ">它「衣舊」美麗，但「衣燃」不環保</h1>
+        <span style="padding-bottom:5px ; border-bottom-width: 2px ; border-bottom-color: #E59F23 ; border-bottom-style : solid">
+            視覺化
+        </span>
+        <p class="intro" style="position: relative ; margin-top: -20px ">
+            與我們形影不離的衣物，當它功成身退，民眾常選擇丟進舊衣回收箱或交由清潔隊處理。然而這些被遺棄的衣物， 你是否曾想過，它們可能是造成台灣垃圾危機的一大因子？ 事實上，舊衣經過回收，它們並非都能再找到新主人...
+        </p></a>
 
+        <div class="title-box">
+            <div class="title">
+                司法．人權
+            </div>
+        </div>
+        <div class="flex-article">
+
+            <a href="http://www.unews.nccu.edu.tw/unews/%E7%A4%BE%E7%BE%A4%E8%A1%8C%E9%8A%B7%E9%9B%A3%E9%95%B7%E4%B9%85%e3%80%80%E5%BC%B1%E5%8B%A2%E8%A1%97%E8%B3%A3%E8%80%85%E7%9A%84%E4%B8%8B%E4%B8%80%E7%AB%99%E5%9C%A8%E5%93%AA%E8%A3%A1%EF%BC%9F/" target="_blank">
+            <div>
+                <figure class="article-photo">
+                    <img src="right01.jpg" alt="a photo" width="250px" max-width="calc(150/1024)*100%">
+                </figure>
+                <div class="text-box"></div>
+                <div class="article-text">社群行銷難長久　弱勢街賣者的下一站在哪裡？</div>
+            </div>
+
+
+            <a href="http://newtalk.tw/news/view/2017-10-29/101950" target="_blank">
+                <div>
+                <figure class="article-photo">
+                    <img src="right02.jpg" alt="a photo" width="250px" max-width="calc(200/1024)*100%">
+                </figure>
+                <div class="text-box"></div>
+                <div class="article-text">白育綸觀點》後同婚時代15年性平運動何去何從</div>
+            </div></a>
+
+
+            <a href="http://www.unews.nccu.edu.tw/unews/%E8%A3%9C%E8%B5%B7%E7%A4%BE%E6%9C%83%E9%98%B2%E8%AD%B7%E7%B6%B2%e3%80%80%E6%88%90%E5%B9%B4%E8%A7%80%E8%AD%B7%E4%BA%BA%E7%9A%84%E8%81%B7%E8%B2%AC%E6%83%B3%E5%83%8F%E8%88%87%E8%A1%9D%E7%AA%81/" target="_blank">
+                <div>
+                <figure class="article-photo">
+                    <img src="right03.jpg" alt="a photo" width="250px" max-width="calc(200/1024)*100%">
+                </figure>
+                <div class="text-box"></div>
+                <div class="article-text">補起社會防護網　成年觀護人的職責想像與衝突</div>
+            </div></a>
+        </div>
+
+        <div class="title-box" style="background-color: #F1F1F1">
+                <div class="title">
+                    產業．經濟
+                </div>
+            </div>
+        <div class="flex-article" style="background-color: #F1F1F1">
+            <a href="http://www.unews.nccu.edu.tw/unews/%E8%B3%BD%E9%B4%BF/" target="_blank">
+            <div>
+                <figure class="article-photo">
+                    <img src="industry01.jpg" alt="a photo" width="250px" max-width="calc(150/1024)*100%">
+                </figure>
+                <div class="text-box"></div>
+                <div class="article-text">在天空飛翔的鈔票　賽鴿利益解密與合法化之路</div>
+            </div></a>
+
+
+            <a href="http://www.unews.nccu.edu.tw/unews/%E5%A4%BE%E5%A8%83%E5%A8%83%E6%A9%9F%E5%BA%97%E7%9A%84%E4%BB%8A%E7%94%9F%E6%9C%AA%E4%BE%86%EF%BC%8C%E6%98%AF%E7%AA%81%E5%9C%8D%E9%82%84%E6%98%AF%E6%B3%A1%E6%B2%AB%EF%BC%9F/" target="_blank">
+            <div>
+                <figure class="article-photo">
+                    <img src="industry02.jpg" alt="a photo" width="250px" max-width="calc(200/1024)*100%">
+                </figure>
+                <div class="text-box"></div>
+                <div class="article-text">夾娃娃機店的今生未來，是突圍還是泡沫？</div>
+            </div></a>
+          
+            <a href="http://www.unews.nccu.edu.tw/unews/%E7%B4%85%E6%AF%AF%E5%89%8D%E7%9A%84%E5%B9%95%E5%BE%8C%E5%B7%A5%E4%BD%9C%E8%80%85%e3%80%80%E4%BF%83%E5%B9%B8%E7%A6%8F%E7%94%A2%E6%A5%AD%E5%86%8D%E5%8D%87%E7%B4%9A/"
+            target="_blank">
+            <div>
+                <figure class="article-photo">
+                    <img src="industry03.jpg" alt="a photo" width="250px" max-width="calc(200/1024)*100%">
+                </figure>
+                <div class="text-box"></div>
+                <div class="article-text">紅毯前的幕後工作者　促幸福產業再升級</div>
+            </div></a>
+        </div>
+
+
+        <div class="title-box">
+                <div class="title">
+                    教育．文化
+                </div>
+            </div>
+
+        <div class="flex-article" style="min-height: 340px">
+
+                <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016/practice.html" target="_blank">
+                <div>
+                <figure class="article-photo">
+                    <img src="photo01.jpg" alt="a photo" width="250px" max-width="calc(150/1024)*100%">
+                </figure>
+                <div class="text-box" style="height: 123px"></div>
+                <div class="article-text">【當老師不再是鐵飯碗 1】代理教師擔起少子化的必然與不公</div>
+            </div></a>
+            
+            <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016/teacher02.html" target="_blank">
+            <div>
+                <figure class="article-photo">
+                    <img src="photo03.jpg" alt="a photo" width="250px" max-width="calc(200/1024)*100%">
+                </figure>
+                <div class="text-box"  style="height: 123px"></div>
+                <div class="article-text">【當老師不再是鐵飯碗 2】代理教師陷重重困境　燃燒熱忱何以為繼</div>
+            </div></a>
+
+            <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016/teacher03.html" target="_blank">
+            <div>
+                <figure class="article-photo">
+                    <img src="photo02.jpg" alt="a photo" width="250px" max-width="calc(200/1024)*100%">
+                </figure>
+                <div class="text-box" style="height: 123px"></div>
+                <div class="article-text">【當老師不再是鐵飯碗 3】提升代理教師待遇　保障學生受教權</div>
+            </div></a>
+        </div>
     </article>
-    <footer>
-        <table class="shown-on-mobile">
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">關於我們</div>
-                    </td>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">聯絡我們</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">關於我們</div>
-                    </td>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">聯絡我們</div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="hidden-on-mobile">
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">關於我們</div>
-                    </td>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">聯絡我們</div>
-                    </td>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">關於我們</div>
-                    </td>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">聯絡我們</div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </footer>
 </body>
 
 </html>
