@@ -102,8 +102,21 @@
                 margin: 0 auto;
             }
 
+.pic-of-chart {
+    display: none
+}
+
         }
 
+@media screen and (max-width:1023px) {
+    .chart01{
+        display:none ;
+    }
+    .chart02{
+        display: none
+    }
+
+}
 
 
         @media screen and (min-width:768px) and (max-width:1023px) {
@@ -147,14 +160,6 @@
                 width: 900px;
                 margin-left: auto;
                 margin-right: auto;
-            }
-
-            .float-right {
-                float: right;
-                width: 360px;
-                margin-top: 40px;
-                margin-left: 40px;
-                margin-bottom: 50px;
             }
         }
 
@@ -389,7 +394,7 @@ background-color: #fff">
         <h2 class="title">少子化勢不可擋　聘任代理成主流</h2>
         <p>
             根據教育部統計，全國公立國小新生近十年減少約10萬人，班級數下降近2500班；國中端同樣短少近10萬人，縮減約1500班。扣除101學年度適逢龍年出生的國中生入學，總人數較去年攀升外，整體呈現下降趨勢。 </p>
-        <p style="margin-bottom:40px;">
+        <p style="margin-bottom:30px;">
             由於班級數驟降，各級學校教師員額編制數逐年下修。這同時反映在正式教師甄選名額上，錄取人數近十年持續下探。桃園市立福豐國中前校長宋慶瑋分析，除了少子化外，年金改革也導致許多老師延後退休時間，「很多縣市近幾年乾脆不辦教師甄試，想當老師的只剩代理機會。」
         </p>
 
@@ -398,13 +403,13 @@ background-color: #fff">
             ></iframe>
         </div>
 
-        <!--圖表超連結
         <a href="https://buya7mv7tppktwd2to6drw-on.drv.tw/webPage/"
-                target="_blank"><figure>
+                target="_blank">
+        <figure class="pic-of-chart">
             <img src="chart01.jpg" alt="leading image of this article" width="100%" />
         </figure></a>
-       -->
-        <p style="margin-top:45px">以基隆市為例，已連2年沒有甄聘國中正式教師，基隆市立暖暖高級中學校長甘邵文表示，因現在控管教師員額，只能招考代理教師。苗栗縣立西湖國中代理教師唐嘉聰也指出，目前改聘代理教師已成為主流，「去年學校調走一位數學正式老師，後來就是聘代理的了。」
+
+        <p style="margin-top:30px">以基隆市為例，已連2年沒有甄聘國中正式教師，基隆市立暖暖高級中學校長甘邵文表示，因現在控管教師員額，只能招考代理教師。苗栗縣立西湖國中代理教師唐嘉聰也指出，目前改聘代理教師已成為主流，「去年學校調走一位數學正式老師，後來就是聘代理的了。」
         </p>
         <p style="margin-bottom: 45px">
             因此，不同於上述因少子化而不斷減少的數據，近年代理教師可謂逆勢上揚。教育部從96學年度開始蒐集代理教師數據，當年度公立國中小長期代理教師數共計8613人，而後到103學年度時人數創歷史新高，已一路飆升至約18000人。後兩年代理教師總數雖微幅下降，然而是因教學現場所需員額降低所致，代理教師佔公立教師總數比率仍逐年上升，105學年度已增至約10%，其中連江縣更達到近20%。
@@ -414,12 +419,12 @@ background-color: #fff">
                 <iframe style="position:absolute" width="100%" height="100%" src="https://hsu-chen.github.io/vismap/" frameborder="0" scrolling="no"
         ></iframe>
             </div>
-        <!--
+
         <a href="https://hsu-chen.github.io/vismap/" target="_blank">
-            <figure>
+            <figure class="pic-of-chart">
                 <img src="chart02.jpg" alt="leading image of this article" width="100%" />
-            </figure>
-        </a>-->
+            </figure></a>
+
         <h2 style="margin-top:30px">數字上升的秘密　控管與超額教師</h2>
         <p style="margin-top:20px">
             代理教師制度存在已久，原為正式教師因故請長假或不在職時，由代理教師填補其留下的課務。在少子化的趨勢下，為避免教師需求量下降過快，產生超額教師問題，代理教師的雇用彈性，便成為控管教師額度的一大利器。
@@ -610,5 +615,9 @@ background-color: #fff">
         a.appendChild(r);
     })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
 </script>
+
+<script>
+    document.write("<style>.chart02 {zoom:" + (window.screen.width/1920)*0.8 + "!important;}</style>");
+    </script>
 
 </html>

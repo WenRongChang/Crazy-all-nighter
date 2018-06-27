@@ -119,12 +119,6 @@
             }
         }
 
-        .authors {
-            margin-right: 30px;
-            font-size: 15px;
-            line-height: 2.25;
-        }
-
         a {
             color: #2d2d2d;
             text-decoration: none;
@@ -147,14 +141,6 @@
                 width: 900px;
                 margin-left: auto;
                 margin-right: auto;
-            }
-
-            .float-right {
-                float: right;
-                width: 360px;
-                margin-top: 40px;
-                margin-left: 40px;
-                margin-bottom: 50px;
             }
         }
 
@@ -203,30 +189,6 @@
             font-weight: bold;
         }
 
-        .related-items {
-            margin-bottom: 60px;
-        }
-
-        .related-item {
-            background-color: #e1e1e1;
-            margin-top: 20px;
-            padding: 20px;
-            cursor: pointer;
-        }
-
-        .related-item>img {
-            width: 20%;
-            vertical-align: middle;
-        }
-
-        .related-item>div {
-            display: inline-block;
-            width: 70%;
-            padding-left: 20px;
-            vertical-align: middle;
-            line-height: 1.5;
-        }
-
         .title-box {
             background-color: #dcdcdc;
             position: relative;
@@ -257,6 +219,15 @@
             opacity: 0.5;
         }
 
+       .tag-text {
+            color: #2d2d2d
+        }
+
+        .tag-text:hover {
+            color: #e1e1e1;
+            background-color: #2d2d2d
+        }
+
         .article-photo {
             margin-left: 15px;
             margin-right: 15px;
@@ -269,6 +240,52 @@
             width: 250px;
             margin-left: 15px;
             margin-top: -16px;
+        }
+
+        .tag-box {
+            position: absolute;
+            height: 100%;
+            width: 160px;
+            margin-left: 15px;
+            margin-top: -16px;
+            max-width: 900 px;
+        }
+
+        .tag-text {
+            position: relative;
+            font-size: 30px;
+            font-weight: bold;
+            color: #2d2d2d;
+            width: 150px;
+
+        }
+
+        .flex-tag {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1024px;
+            margin: 0 auto;
+            padding-top: 0px;
+            flex-wrap: nowrap
+        }
+
+        .flex-tag>div {
+            margin-bottom: 48px;
+        }
+
+        @media screen and(min-width:768px) and (max-width:1023px) {
+            .tag-text {
+                font-size: 27px
+            }
+        }
+
+        @media screen and(min-width:768px) and (max-width:768px) {
+            .flex-tag {
+                max-width: cala(600/768*100%);
+            }
+            .tag-text {
+                font-size: 24px
+            }
         }
 
         .article-text {
@@ -337,8 +354,9 @@
 
 <body style="font-family: Microsoft JhengHei, " Noto Sans TC ", "PingFang TC ", "Apple LiGothic Medium ", Roboto, "Lucida
     Grande ", "Lucida Sans Unicode ", sans-serif; background-color: #fff">
+    <div style="width:100% ; margin-top: 20px ;"></div>
     <header>
-        <figure style="margin-top: 20px; margin-bottom: 30px ; width: 100%  height: calc(768/497*100%)">
+        <figure style="margin: 0 auto ; max-width:calc(400/1280*100%) ;width: 100%  height: calc(768/497*100%)">
             <img src="desktop-02.png" alt="header" width="100%" />
         </figure>
     </header>
@@ -359,10 +377,35 @@
     </header>-->
 
     <article>
-        <div style=" width: 100% ; max-width :900px ; margin: 0 auto ; height: 2px ; background-color: #2d2d2d ">
+        <div style="width:100% ; margin-top: 20px ;"></div>
+        <div style=" width: 100% ; max-width :900px ;  ;margin: 0 auto ; height: 2px ; background-color: #2d2d2d ">
 
         </div>
     </article>
+    <div class="flex-tag" style="max-width: calc(270/320*100%) ; margin-right: auto; margin-left: auto ; margin-top: 30px">
+        <a href="#justice">
+            <div class="item1">
+                <div class="tag-box"></div>
+                <div class="tag-text">司法．人權</div>
+            </div>
+        </a>
+
+        <a href="#industry">
+            <div class="item1">
+                <div class="tag-box"></div>
+                <div class="tag-text">產業．經濟</div>
+            </div>
+        </a>
+
+        <a href="#educate">
+            <div class="item1">
+                <div class="tag-box"></div>
+                <div class="tag-text">教育．文化</div>
+            </div>
+        </a>
+    </div>
+
+
     <a href="https://ws840427.wixsite.com/nccunews" target="_blank">
         <article class="item">
 
@@ -379,7 +422,7 @@
         </article>
     </a>
     <article>
-        <div class="title-box">
+        <div id="justice" class="title-box">
             <div class="title">
                 司法．人權
             </div>
@@ -420,7 +463,7 @@
                 </a>
         </div>
 
-        <div class="title-box" style="background-color: #F1F1F1">
+        <div id="industry" class="title-box" style="background-color: #F1F1F1">
             <div class="title">
                 產業．經濟
             </div>
@@ -460,7 +503,7 @@
         </div>
 
 
-        <div class="title-box">
+        <div id="educate" class="title-box">
             <div class="title">
                 教育．文化
             </div>
@@ -503,23 +546,23 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121184139-2"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-121184139-2');
+    gtag('config', 'UA-121184139-2');
 </script>
 
 <!-- Hotjar Tracking Code for https://wenrongchang.github.io/crazy-all-nighter/104405016/index.html -->
 <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:929896,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    (function (h, o, t, j, a, r) {
+        h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+        h._hjSettings = { hjid: 929896, hjsv: 6 };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script'); r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
         a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
 </script>
 
 </html>
