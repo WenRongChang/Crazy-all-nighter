@@ -59,7 +59,7 @@
             margin: 0 auto;
         }
 
-.chart02 {
+        .chart02 {
             position: relative;
             padding-bottom: calc(980/852*100%);
         }
@@ -189,12 +189,6 @@
             margin-bottom: 17px;
         }
 
-        .logo {
-            width: 100px;
-            height: 25px;
-            background-color: #e1e1e1
-        }
-
         .menu {
             width: 22px;
             height: 22px;
@@ -313,7 +307,110 @@
                 width: 700px;
             }
         }
+
+        @media screen and (max-width:768px) {
+            .header-logobox {
+                padding-bottom: 45%;
+                position: relative;
+                margin-bottom: 55 px;
+            }
+            .liver-logo {
+                position: absolute;
+                left: 32%;
+                width: 35%;
+            }
+            .line {
+                position: absolute;
+                left: 0%;
+                top: 95%;
+                width: 100%;
+                height: 1%
+            }
+            .law {
+                position: absolute;
+                left: 15%;
+                top: 96%;
+                width: 18%;
+            }
+            .economics {
+                position: absolute;
+                left: 40.5%;
+                top: 96%;
+                width: 18%;
+            }
+            .education {
+                position: absolute;
+                left: 65.5%;
+                top: 96%;
+                width: 18%;
+            }
+            .fb {
+                position: absolute;
+                right: 8%;
+                top: 7%;
+                width: 6%;
+            }
+            .ig {
+                position: absolute;
+                right: 0%;
+                top: 7%;
+                width: 6%;
+            }
+
+        }
+
+
+        @media screen and (min-width: 768px) {
+            .header-logobox {
+                padding-bottom: 20%;
+                position: relative;
+            }
+            .liver-logo {
+                position: absolute;
+                left: 0;
+                width: 20%
+            }
+            .line {
+                position: absolute;
+                right: 0%;
+                top: 35%;
+                width: 75%;
+                height: 1%
+            }
+            .law {
+                position: absolute;
+                left: 35%;
+                top: 36%;
+                width: 15%;
+            }
+            .economics {
+                position: absolute;
+                left: 55%;
+                top: 36%;
+                width: 15%;
+            }
+            .education {
+                position: absolute;
+                left: 75%;
+                top: 36%;
+                width: 15%;
+            }
+            .fb {
+                position: absolute;
+                right: 4%;
+                top: 2%;
+                width: 3%;
+            }
+            .ig {
+                position: absolute;
+                right: 0%;
+                top: 2%;
+                width: 3%;
+            }
+        }
     </style>
+
+
 
 </head>
 <!--
@@ -337,19 +434,18 @@
 background-color: #fff">
 
 
-    <header class="header">
-        <table style="width:100%">
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="logo"></div>
-                    </td>
-                    <td style="width:22px">
-                        <div class="menu"></div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+    <header>
+        <div class="header-logobox" style="margin-bottom: 50px">
+            <figure>
+                <img src="logo.png" alt="logo" class="liver-logo">
+                <img src="分隔線.png" alt="line" class="line">
+                <img src="司法人權.png" alt="law" class="law">
+                <img src="產業經濟.png" alt="economics" class="economics">
+                <img src="教育文化.png" alt="education" class="education">
+                <img src="fb.png" alt="fb" class="fb">
+                <img src="ig.png" alt="ig" class="ig">
+            </figure>
+        </div>
     </header>
     <article>
         <header>
@@ -379,7 +475,7 @@ background-color: #fff">
         </figure>
         <p class="introduction" style="margin-top:40px ; margin-bottom: 30px">代理教師在教學現場的角色日益吃重，除了流動率高的問題外，其所受的待遇也與正式教師落差甚大，不若正式教師擁有完整聘期、可依累計年資調薪等福利保障。桃園市立福豐國中前校長宋慶瑋說：「不只同工不同酬，有的代理教師比正式老師付出得更多，得到的卻更少。」
         </p>
-        
+
         <h2 class="title">困境1：每年固定失業　卻難領補助</h2>
         <p>根據《中小學兼任代課及代理教師聘任辦法》，訂定代理教師聘期為地方政府權限，導致各縣市代理教師待遇不同。多數縣市僅8月底至隔年7月初給薪，聘期只有10到11個月，即使在薪資待遇最佳的台北市服務，代理教師也需在獲學校續聘後才享有完整年薪。</p>
         <p>代理教師並非如正式教師參加公保，而是比照一般勞工投保勞保。在暑假因聘期不足一年，而被迫失業期間，理應可申請失業補助。然而宋慶瑋解釋，《就業保險法》規定失業一個月後使得請領，再加上兩周的審查期，期間若是收到聘書將會失去請領資格，「代理教師常因『已知即將就業不能申請失業補助』為由遭拒，但實質上近2個月都是無薪的。」</p>
@@ -388,10 +484,10 @@ background-color: #fff">
         <p style="margin-bottom:40px;">
             在新竹地區任教的劉姓代理教師指出，由於暑假的兩個月沒有收入，「只能盡量在學期中賺多一點錢」，想辦法接下學校內的額外工作。他感嘆，雖然非常勞累，但還是陸續接過資優班課程、補救教學與暑輔，藉此賺取鐘點費。
         </p>
-            <div class="chart02" style="max-width:1280px">
-                <iframe style="position:absolute" width="100%" height="100%" src="https://hsu-chen.github.io/vismap/?number=0" frameborder="0" scrolling="no"
-        ></iframe>
-            </div>
+        <div class="chart02" style="max-width:1280px">
+            <iframe style="position:absolute" width="100%" height="100%" src="https://hsu-chen.github.io/vismap/?number=0" frameborder="0"
+                scrolling="no"></iframe>
+        </div>
 
         <h2 class="title">困境2：暑期失業不給薪　無償付出做功德</h2>
 
@@ -406,8 +502,8 @@ background-color: #fff">
         <p>代理教師在其餘收入與加給上更是相差許多，年終獎金因聘期不完整而有落差，考績獎金與特休都因年資未滿一年而泡湯。此外，代理教師並非正式教師，不得投保公保，因此即便工作內容雷同，也沒有公保退休金。「代理教師如同體制下的小媳婦。」宋慶偉感嘆，代理教師除了薪資外，其餘皆比照正式教師規範，薪資給付卻不合理，對代理教師來說是不公平的。</p>
         <p style="margin-bottom:30px">註1：基本薪額依學歷、有無教師證、修畢教育學程而定，最低（大學畢業未修教育學程、無教師證）是20440，最高則是30430元（博士畢業修畢教育學程且具教師證），實際薪資會因是否有相關加給而變動。</p>
         <figure>
-                <img src="chart03.jpg" alt="leading image of this article" width="100%" />
-            </figure>
+            <img src="chart03.jpg" alt="leading image of this article" width="100%" />
+        </figure>
         <h2 class="title">困境4：身兼行政職　背後辛酸無人知</h2>
         <p>代理教師除了薪水會被苛扣外，更可能需負擔吃力不討好的行政職。「屎缺都丟給你。」國中國文代理教師「小君」（化名）表示，代理教師剛到新環境，既沒人脈也沒背景，若校方要求接任行政職，普遍不敢拒絕，甚至資深教師會給代理教師壓力，要求接任教學組長等不受歡迎的職位。唐嘉聰說：「雖然應徵時就會討論可不可以兼任行政職，但如果不能配合學校就會是第二考量，代理教師很難去拒絕。」</p>
         <p>「桃園市國中的生教組長大概有1/3都是代理老師。」宋慶瑋解釋，生教組長常需利用下班後或假日時間關懷中輟生，需要額外付出許多心力，這種正式教師無意願的組長職務，便常常落在代理教師身上。</p>
@@ -439,7 +535,8 @@ background-color: #fff">
 
         <div class="related-text">延伸閱讀</div>
         <ul class="related-items">
-            <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016_%E5%BC%B5%E7%8E%9F%E6%A6%95%20%E6%9C%9F%E6%9C%AB%E7%B6%B2%E9%A0%81/practice.html" target="_blank">
+            <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016_%E5%BC%B5%E7%8E%9F%E6%A6%95%20%E6%9C%9F%E6%9C%AB%E7%B6%B2%E9%A0%81/practice.html"
+                target="_blank">
                 <li class="related-item">
                     <img src="photo01.jpg" alt="leading image of this article" />
                     <div>【當老師不再是鐵飯碗 1】代理教師擔起少子化的必然與不公</div>
@@ -570,23 +667,23 @@ background-color: #fff">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121184139-3"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-121184139-3');
+    gtag('config', 'UA-121184139-3');
 </script>
 
 <!-- Hotjar Tracking Code for https://wenrongchang.github.io/crazy-all-nighter/104405016/teacher02.html -->
 <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:929899,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    (function (h, o, t, j, a, r) {
+        h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+        h._hjSettings = { hjid: 929899, hjsv: 6 };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script'); r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
         a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
 </script>
 
 

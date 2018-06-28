@@ -50,9 +50,6 @@
 
         article>p,
         article>h2,
-        article>blockquote,
-        article>ul,
-        article figcaption,
         article>div,
         article>header {
             max-width: calc(270/320*100%);
@@ -66,21 +63,6 @@
             letter-spacing: 0.9px;
             margin-top: 40px;
             text-align: justify;
-        }
-
-        article>blockquote {
-            padding-left: 21px;
-            color: #6d6d6d;
-            border-left: 1px solid #6d6d6d;
-        }
-
-
-        article figcaption {
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.8px;
-            color: #6d6d6d;
-            margin-top: 15px;
         }
 
         article>h2 {
@@ -162,33 +144,6 @@
             margin-bottom: 17px;
         }
 
-        .logo {
-            width: 100px;
-            height: 25px;
-            background-color: #e1e1e1
-        }
-
-        .menu {
-            width: 22px;
-            height: 22px;
-            background-color: #e1e1e1;
-        }
-
-        .introduction {
-            font-size: 22px;
-            line-height: 1.82;
-            letter-spacing: 1.6px;
-            text-align: justify;
-            margin-top: 30px;
-        }
-
-        .related-text {
-            font-size: 16px;
-            line-height: 2.25;
-            text-align: center;
-            font-weight: bold;
-        }
-
         .title-box {
             background-color: #dcdcdc;
             position: relative;
@@ -211,6 +166,23 @@
             min-height: 320px;
         }
 
+        .flex-article {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1024px;
+            margin: 0 auto;
+            padding-top: 0px;
+            flex-wrap: wrap
+        }
+
+        .flex-article>div {
+            min-width: 200px;
+            margin-bottom: 48px
+        }
+
+
+
+
         .item {
             opacity: 1;
         }
@@ -219,14 +191,162 @@
             opacity: 0.5;
         }
 
-
-        .tag-text {
-            color: #2d2d2d
+        @media screen and (min-width: 1024px) {
+            .flex-tag {
+                padding-bottom: 5%;
+                position: relative;
+                margin-bottom: 40px;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 1350px;
+            }
+            .justice {
+                position: absolute;
+                left: calc(250/1280*100%);
+                top: 56%;
+                width: 180px;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .industry {
+                position: absolute;
+                left: calc(570/1280*100%);
+                top: 56%;
+                width: 15%;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .educate {
+                position: absolute;
+                left: calc(885/1280*100%);
+                top: 56%;
+                width: 15%;
+                font-size: 30px;
+                font-weight: bold;
+            }
         }
 
-        .tag-text:hover {
-            color: #e1e1e1;
-            background-color: #2d2d2d
+        @media screen and (min-width: 601px) and (max-width: 1023px) {
+            .flex-tag {
+                padding-bottom: 5%;
+                position: relative;
+                margin-bottom: 30px;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 850px;
+            }
+            .justice {
+                position: absolute;
+                left: calc(155/1280*100%);
+                top: 60%;
+                width: 100%;
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .industry {
+                position: absolute;
+                left: calc(548/1280*100%);
+                top: 60%;
+                width: 100%;
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .educate {
+                position: absolute;
+                left: calc(935/1280*100%);
+                top: 60%;
+                width: 100%;
+                font-size: 24px;
+                font-weight: bold;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+
+            .flex-tag {
+                padding-bottom: 5%;
+                position: relative;
+                margin-bottom: 30px;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: calc(480/600*100);
+
+            }
+            .justice {
+                position: absolute;
+                left: calc(20/600*100%);
+                top: 70%;
+                width: 100%;
+                font-size: 17px;
+                font-weight: bold;
+            }
+            .industry {
+                position: absolute;
+                left: calc(240/600*100%);
+                top: 70%;
+                width: 100%;
+                font-size: 17px;
+                font-weight: bold;
+            }
+            .educate {
+                position: absolute;
+                left: calc(450/600*100%);
+                top: 70%;
+                width: 100%;
+                font-size: 17px;
+                font-weight: bold;
+            }
+        }
+
+        .justice {
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+        }
+
+        .justice:hover,
+        .justice:focus,
+        .justice:active {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+   .industry {
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+        }
+
+        .industry:hover,
+        .industry:focus,
+        .industry:active {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+           .educate {
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+        }
+
+        .educate:hover,
+        .educate:focus,
+        .educate:active {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
         }
 
         .article-photo {
@@ -243,22 +363,75 @@
             margin-top: -16px;
         }
 
-        .tag-box {
+        .article-text {
+            margin-top: 15px;
+            font-size: 20px;
+            text-align: center;
+            color: #2d2d2d;
+            max-width: 250px;
+            padding-left: 30px;
+            line-height: 1.5;
+            position: relative;
+            font-weight: bold;
+        }
+
+
+        @media screen and (max-width:768px) {
+            .flex-article {
+                max-width: calc(600/768*100%);
+            }
+        }
+
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            article>p,
+            article>h2,
+            article>div,
+            article>header,
+                {
+                width: 550px;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            article>p,
+            article>h2,
+            article>div,
+            article>header {
+                max-width: 756px;
+            }
+        }
+    </style>
+
+</head>
+
+<body style="font-family: Microsoft JhengHei, " Noto Sans TC ", "PingFang TC ", "Apple LiGothic Medium ", Roboto, "Lucida
+    Grande ", "Lucida Sans Unicode ", sans-serif; background-color: #fff">
+    <div style="width:100% ; margin-top: 20px ;"></div>
+    <header>
+        <figure style="margin: 0 auto ; max-width:calc(400/1280*100%) ;width: 100%  height: calc(768/497*100%)">
+            <img src="desktop-02.png" alt="header" width="100%" />
+        </figure>
+    </header>
+
+    <article>
+        <div style="width:100% ; margin-top: 20px ;"></div>
+        <div style=" width: 100% ; max-width :900px ;  ;margin: 0 auto ; height: 2px ; background-color: #2d2d2d ">
+        </div>
+    </article>
+
+    <!--   .tag-box {
             position: absolute;
             height: 100%;
-            width: 160px;
             margin-left: 15px;
             margin-top: -16px;
             max-width: 900 px;
         }
 
         .tag-text {
-            position: relative;
-            font-size: 30px;
-            font-weight: bold;
             color: #2d2d2d;
-            width: 150px;
-
+            position: relative;
+            font-weight: bold;
         }
 
         .flex-tag {
@@ -274,139 +447,24 @@
             margin-bottom: 48px;
         }
 
+-->
 
-
-        @media screen and(min-width:768px) and (max-width:1023px) {
-            .tag-text {
-                font-size: 27px ;
-            }
-        }
-
-        @media screen and(max-width:768px){
-            .flex-tag {
-                max-width: calc(500/768*100%);
-            }
-            .tag-text {
-                font-size: 22px ;
-            }
-        }
-
-        .article-text {
-            margin-top: 15px;
-            font-size: 20px;
-            text-align: center;
-            color: #2d2d2d;
-            max-width: 250px;
-            padding-left: 30px;
-            line-height: 1.5;
-            position: relative;
-            font-weight: bold;
-        }
-
-        .flex-article {
-            display: flex;
-            justify-content: space-around;
-            max-width: 1024px;
-            margin: 0 auto;
-            padding-top: 0px;
-            flex-wrap: wrap
-        }
-
-        .flex-article>div {
-            min-width: 200px;
-            margin-bottom: 48px
-        }
-
-        @media screen and (max-width:768px) {
-            .flex-article {
-                max-width: calc(600/768*100%);
-            }
-            .tag-text {
-                font-size: 24px ;
-                width: calc(135/300)px ;
-            }
-        }
-
-
-        @media screen and (min-width: 768px) and (max-width: 1023px) {
-            article>p,
-            article>h2,
-            article>blockquote,
-            article>ul,
-            article figcaption,
-            article>div,
-            article>header,
-            article>ul {
-                width: 550px;
-            }
-        }
-
-        @media screen and (min-width: 1024px) {
-            article>p,
-            article>h2,
-            article>blockquote,
-            article>ul,
-            article figcaption,
-            article>div,
-            article>header {
-                max-width: 756px;
-            }
-            article>ul {
-                width: 700px;
-            }
-        }
-    </style>
-
-</head>
-
-<body style="font-family: Microsoft JhengHei, " Noto Sans TC ", "PingFang TC ", "Apple LiGothic Medium ", Roboto, "Lucida
-    Grande ", "Lucida Sans Unicode ", sans-serif; background-color: #fff">
-    <div style="width:100% ; margin-top: 20px ;"></div>
-    <header>
-        <figure style="margin: 0 auto ; max-width:calc(400/1280*100%) ;width: 100%  height: calc(768/497*100%)">
-            <img src="desktop-02.png" alt="header" width="100%" />
-        </figure>
-    </header>
-    <!--
-    <header class="header">
-        <table style="width:100% ">
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="logo"></div>
-                    </td>
-                    <td style="width:22px">
-                        <div class="menu"></div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </header>-->
-
-    <article>
-        <div style="width:100% ; margin-top: 20px ;"></div>
-        <div style=" width: 100% ; max-width :900px ;  ;margin: 0 auto ; height: 2px ; background-color: #2d2d2d ">
-        </div>
-    </article>
-    <div class="flex-tag" style="max-width: calc(200/320*100%) ; margin-right: auto; margin-left: auto ; margin-top: 30px">
+    <div class="flex-tag">
         <a href="#justice">
             <div class="item1">
-                <div class="tag-box"></div>
-                <div class="tag-text">司法．人權</div>
+                <div class="justice">司法．人權</div>
             </div>
         </a>
 
         <a href="#industry">
             <div class="item1">
-                <div class="tag-box"></div>
-                <div class="tag-text">產業．經濟</div>
+                <div class="industry">產業．經濟</div>
             </div>
         </a>
 
         <a href="#educate">
             <div class="item1">
-                <div class="tag-box"></div>
-                <div class="tag-text">教育．文化</div>
+                <div class="educate">教育．文化</div>
             </div>
         </a>
     </div>

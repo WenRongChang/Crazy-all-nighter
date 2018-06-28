@@ -28,10 +28,6 @@
             line-height: 1.32;
         }
 
-        header>table {
-            width: 100%;
-        }
-
         header,
         article>header {
             max-width: calc(270/320*100%);
@@ -102,21 +98,21 @@
                 margin: 0 auto;
             }
 
-.pic-of-chart {
-    display: none
-}
+            .pic-of-chart {
+                display: none
+            }
 
         }
 
-@media screen and (max-width:1023px) {
-    .chart01{
-        display:none ;
-    }
-    .chart02{
-        display: none
-    }
+        @media screen and (max-width:1023px) {
+            .chart01 {
+                display: none;
+            }
+            .chart02 {
+                display: none
+            }
 
-}
+        }
 
 
         @media screen and (min-width:768px) and (max-width:1023px) {
@@ -199,18 +195,6 @@
             margin-bottom: 17px;
         }
 
-        .logo {
-            width: 100px;
-            height: 25px;
-            background-color: #e1e1e1
-        }
-
-        .menu {
-            width: 22px;
-            height: 22px;
-            background-color: #e1e1e1;
-        }
-
         .introduction {
             font-size: 22px;
             line-height: 1.82;
@@ -289,7 +273,7 @@
             margin-bottom: 48px
         }
 
-        @media screen and (max-width:768px) {
+        @media only screen and (max-width:768px) {
             .flex-footer {
                 width: 228px;
             }
@@ -323,7 +307,110 @@
                 width: 700px;
             }
         }
+
+        @media screen and (max-width:768px) {
+            .header-logobox {
+                padding-bottom: 45%;
+                position: relative;
+                margin-bottom: 55 px;
+            }
+            .liver-logo {
+                position: absolute;
+                left: 32%;
+                width: 35%;
+            }
+            .line {
+                position: absolute;
+                left: 0%;
+                top: 95%;
+                width: 100%;
+                height: 1%
+            }
+            .law {
+                position: absolute;
+                left: 15%;
+                top: 96%;
+                width: 18%;
+            }
+            .economics {
+                position: absolute;
+                left: 40.5%;
+                top: 96%;
+                width: 18%;
+            }
+            .education {
+                position: absolute;
+                left: 65.5%;
+                top: 96%;
+                width: 18%;
+            }
+            .fb {
+                position: absolute;
+                right: 8%;
+                top: 7%;
+                width: 6%;
+            }
+            .ig {
+                position: absolute;
+                right: 0%;
+                top: 7%;
+                width: 6%;
+            }
+
+        }
+
+
+        @media screen and (min-width: 768px) {
+            .header-logobox {
+                padding-bottom: 20%;
+                position: relative;
+            }
+            .liver-logo {
+                position: absolute;
+                left: 0;
+                width: 20%
+            }
+            .line {
+                position: absolute;
+                right: 0%;
+                top: 35%;
+                width: 75%;
+                height: 1%
+            }
+            .law {
+                position: absolute;
+                left: 35%;
+                top: 36%;
+                width: 15%;
+            }
+            .economics {
+                position: absolute;
+                left: 55%;
+                top: 36%;
+                width: 15%;
+            }
+            .education {
+                position: absolute;
+                left: 75%;
+                top: 36%;
+                width: 15%;
+            }
+            .fb {
+                position: absolute;
+                right: 4%;
+                top: 2%;
+                width: 3%;
+            }
+            .ig {
+                position: absolute;
+                right: 0%;
+                top: 2%;
+                width: 3%;
+            }
+        }
     </style>
+
+
 
 </head>
 <!--
@@ -347,19 +434,18 @@
 background-color: #fff">
 
 
-    <header class="header">
-        <table style="width:100%">
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="logo"></div>
-                    </td>
-                    <td style="width:22px">
-                        <div class="menu"></div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+    <header>
+        <div class="header-logobox" style="margin-bottom: 50px">
+            <figure>
+                <img src="logo.png" alt="logo" class="liver-logo">
+                <img src="分隔線.png" alt="line" class="line">
+                <img src="司法人權.png" alt="law" class="law">
+                <img src="產業經濟.png" alt="economics" class="economics">
+                <img src="教育文化.png" alt="education" class="education">
+                <img src="fb.png" alt="fb" class="fb">
+                <img src="ig.png" alt="ig" class="ig">
+            </figure>
+        </div>
     </header>
     <article>
         <header>
@@ -399,15 +485,14 @@ background-color: #fff">
         </p>
 
         <div class="chart01">
-            <iframe style="position:absolute" width="100%" height="100%" src="https://buya7mv7tppktwd2to6drw-on.drv.tw/webPage/" frameborder="0"
-            ></iframe>
+            <iframe style="position:absolute" width="100%" height="100%" src="https://buya7mv7tppktwd2to6drw-on.drv.tw/webPage/" frameborder="0"></iframe>
         </div>
 
-        <a href="https://buya7mv7tppktwd2to6drw-on.drv.tw/webPage/"
-                target="_blank">
-        <figure class="pic-of-chart">
-            <img src="chart01.jpg" alt="leading image of this article" width="100%" />
-        </figure></a>
+        <a href="https://buya7mv7tppktwd2to6drw-on.drv.tw/webPage/" target="_blank">
+            <figure class="pic-of-chart">
+                <img src="chart01.jpg" alt="leading image of this article" width="100%" />
+            </figure>
+        </a>
 
         <p style="margin-top:30px">以基隆市為例，已連2年沒有甄聘國中正式教師，基隆市立暖暖高級中學校長甘邵文表示，因現在控管教師員額，只能招考代理教師。苗栗縣立西湖國中代理教師唐嘉聰也指出，目前改聘代理教師已成為主流，「去年學校調走一位數學正式老師，後來就是聘代理的了。」
         </p>
@@ -416,14 +501,14 @@ background-color: #fff">
         </p>
 
         <div class="chart02" style="max-width:1280px">
-                <iframe style="position:absolute" width="100%" height="100%" src="https://hsu-chen.github.io/vismap/" frameborder="0" scrolling="no"
-        ></iframe>
-            </div>
+            <iframe style="position:absolute" width="100%" height="100%" src="https://hsu-chen.github.io/vismap/" frameborder="0" scrolling="no"></iframe>
+        </div>
 
         <a href="https://hsu-chen.github.io/vismap/" target="_blank">
             <figure class="pic-of-chart">
                 <img src="chart02.jpg" alt="leading image of this article" width="100%" />
-            </figure></a>
+            </figure>
+        </a>
 
         <h2 style="margin-top:30px">數字上升的秘密　控管與超額教師</h2>
         <p style="margin-top:20px">
@@ -466,8 +551,7 @@ background-color: #fff">
 
         <div class="related-text">延伸閱讀</div>
         <ul class="related-items">
-            <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016/teacher02.html"
-                target="_blank">
+            <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016/teacher02.html" target="_blank">
                 <li class="related-item">
                     <img src="chart03.jpg" alt="leading image of this article" />
                     <div>【當老師不再是鐵飯碗 2】代理教師陷重重困境　燃燒熱忱何以為繼</div>
@@ -617,7 +701,7 @@ background-color: #fff">
 </script>
 
 <script>
-    document.write("<style>.chart02 {zoom:" + (window.screen.width/1920)*0.8 + "!important;}</style>");
-    </script>
+    document.write("<style>.chart02 {zoom:" + (window.screen.width / 1920) * 0.8 + "!important;}</style>");
+</script>
 
 </html>
