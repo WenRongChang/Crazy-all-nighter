@@ -349,6 +349,7 @@
                 right: 8%;
                 top: 7%;
                 width: 6%;
+
             }
             .ig {
                 position: absolute;
@@ -356,9 +357,7 @@
                 top: 7%;
                 width: 6%;
             }
-
         }
-
 
         @media screen and (min-width: 768px) {
             .header-logobox {
@@ -408,26 +407,110 @@
                 width: 3%;
             }
         }
+        @media screen and (max-width: 768px) {
+            .computer {
+                display: none
+            }
+            .footer-bg {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+            }
+            .about-us {
+                position: absolute;
+                left:10%;
+                top: 12%;
+                width: 40%;
+                color: rgba(255, 255, 255, 0.924);
+                font-size: 20px
+            }
+
+            .about-us-word {
+                position: absolute;
+                left: 10%;
+                top: 23%;
+                width: 75%;
+                color: rgb(255, 104, 104);
+                line-height: 20px;
+                font-size: 12px;
+                max-width: 100%;
+            }
+            .contact-us {
+                position: absolute;
+                left: 10%;
+                top: 48%;
+                width: 40%;
+                color: rgba(255, 255, 255, 0.924);
+                font-size: 20px;
+            }
+
+            .contact-us-word {
+                position: absolute;
+                left: 10%;
+                top: 59%;
+                width: 100%;
+                color: rgb(255, 104, 104);
+                line-height: 15px;
+                font-size: 12px;
+                max-width: 100%;
+            }
+
+        }
+
+        @media screen and (min-width: 768px) {
+            .phone {
+                display: none
+            }
+            .footer-bg {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+            }
+            .about-us {
+                position: absolute;
+                left: 18%;
+                top: 28%;
+                width: 20%;
+                color: rgba(255, 255, 255, 0.924);
+                font-size: 30px;
+            }
+
+            .about-us-word {
+                position: absolute;
+                left: 18%;
+                top: 40%;
+                width: 30%;
+                color: rgb(255, 104, 104);
+                line-height: 35px;
+                font-size: 18px;
+                max-width: 100%;
+            }
+            .contact-us {
+                position: absolute;
+                left: 56%;
+                top: 28%;
+                width: 20%;
+                color: rgba(255, 255, 255, 0.924);
+                font-size: 30px;
+            }
+
+            .contact-us-word {
+                position: absolute;
+                left: 56%;
+                top: 40%;
+                width: 36%;
+                color: rgb(255, 104, 104);
+                line-height: 32px;
+                font-size: 18px;
+                max-width: 100%;
+            }
+        }
+
     </style>
 
 
 
 </head>
-<!--
- .related-item>div:first-child {
-            display: table-cell;
-            width: 80px;
-            height: 80px;
-            background-color: papayawhip;
-        }
-
-
-        .related-item>div:last-child {
-            display: table-cell;
-            padding-left: 20px;
-            vertical-align: middle;
-        }
--->
 
 <body style="font-family: Microsoft JhengHei, " Noto Sans TC ", "PingFang TC ", "Apple LiGothic Medium ", Roboto, "Lucida
     Grande ", "Lucida Sans Unicode ", sans-serif;
@@ -435,24 +518,34 @@ background-color: #fff">
 
 
     <header>
+
         <div class="header-logobox" style="margin-bottom: 50px">
             <figure>
-                <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016/index.html"
-                target="_self"><img src="logo.png" alt="logo" class="liver-logo"></a>
+                <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016/index.html" target="_self">
+                    <img src="logo.png" alt="logo" class="liver-logo">
+                </a>
                 <img src="分隔線.png" alt="line" class="line">
-                <img src="司法人權.png" alt="law" class="law">
-                <img src="產業經濟.png" alt="economics" class="economics">
-                <img src="教育文化.png" alt="education" class="education">
-                <img src="fb.png" alt="fb" class="fb">
-                <img src="ig.png" alt="ig" class="ig">
+                <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016/index.html#justice" target="_self">
+                    <img src="司法人權.png" alt="law" class="law">
+                </a>
+                <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016/index.html#industry" target="_self">
+                    <img src="產業經濟.png" alt="economics" class="economics">
+                </a>
+                <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016/index.html#educate" target="_self">
+                    <img src="教育文化.png" alt="education" class="education">
+                </a>
+                <a href="https://www.facebook.com/" target="_self">
+                    <img src="fb.png" alt="fb" class="fb">
+                </a>
+                <a href="https://www.instagram.com/" target="_self">
+                    <img src="ig.png" alt="ig" class="ig">
+                </a>
             </figure>
         </div>
     </header>
+
     <article>
         <header>
-            <!-- 頭標
-                <span>教育</span>
-            -->
             <h1 style="margin-top: 30px">【當老師不再是鐵飯碗 1】代理教師擔起少子化的必然與不公</h1>
         </header>
         <div style="margin-bottom:15px">
@@ -470,7 +563,7 @@ background-color: #fff">
                 </b>
             </span>
             <span class="authors">
-                    <b>｜2018.05.25</b>
+                <b>｜2018.05.25</b>
             </span>
         </div>
         <figure style="margin-top: 20px; width: 100% ">
@@ -523,15 +616,6 @@ background-color: #fff">
         <p>
             不同於正式教師有工作權的保障，代理教師「處理」起來相對容易。唐嘉聰表示，根據學區內的國小學童數統計，西湖國中後年可能就得面對減班命運。依照教育部員額編制準則，國中班級數每減少1班，教師員額數就會減少2人，「減班一定是先砍代理老師，不可能動到正式教師。」他補充，因代理教師是一年一聘，如果學校不開缺就只好離開，「沒有辦法，這是大家都心知肚明的遊戲規則。」
         </p>
-        <!--  抽言
-           <blockquote>
-            讓打者揮棒跌倒的投手叫摳大；跌倒後再爬起來的球隊叫傳院。＃回家路遙遠＃傳院我罩的
-        </blockquote>
-    
-        <figure>
-            <img src="coda03.jpg" alt="leading image of this article" width="100%" />
-        </figure>
--->
         <h2 style="margin-top:30px">快速變動的大環境　不穩定的代理身分</h2>
 
         <p>
@@ -568,118 +652,62 @@ background-color: #fff">
             </a>
         </ul>
     </article>
+    <footer style="font-family: Microsoft JhengHei,  Noto Sans TC , PingFang TC , Apple LiGothic Medium , Roboto, Lucida
+    Grande, Lucida Sans Unicode , sans-serif">
+        <figure class="footer-bg computer" width="100%; ">
+            <img src="電腦版footer.png" alt="footer" width="100%" />
+            <b class="about-us">
+                關於我們
+            </b>
+            <div class="about-us-word">
+                <p>
+                2018年6月《爆肝者》正式上線，稟持熬夜、不睡、等天亮的精神，為法賢努力當個披星戴月的小粉絲，共同畫下最美好的夏日篇章，我們愛老師！
+                </p>
+            </div>
+            <b class="contact-us">
+                聯絡我們
+            </b>
+            <div class="contact-us-word">
+                <p>
+                    地址：台北市文山區指南路二段64號 大勇樓312編輯室
+                </p>
+                <p>
+                    電話：02-29387084
+                </p>
+                <p>
+                    信箱：uonline@nccu.edu.tw
+                    </p>
+            </div>
+        </figure>
+        <figure class="footer-bg phone"  width="100%;">
+            <img src="手機版footer.png" alt="footer" width="100%" />
+            <b class="about-us">
+            關於我們
+            </b>
+            <div class="about-us-word">
+                <p>
+                    2018年6月《爆肝者》正式上線，稟持熬夜、不睡、等天亮的精神，為法賢努力當個披星戴月的小粉絲，共同畫下最美好的夏日篇章，我們愛老師！
+                </p>
+            </div>
+            <b class="contact-us">
+                聯絡我們
+            </b>
+            <div class="contact-us-word">
+                <p>
+                    地址：台北市文山區指南路二段64號 大勇樓312編輯室
+                </p>
+                <p>
+                    電話：02-29387084
+                </p>
+                <p>
+                    信箱：uonline@nccu.edu.tw
+                    </p>
+            </div>
+        </figure>
 
-    <footer>
-        <div class="flex-footer">
-            <div>
-                <div class="footer-circle"></div>
-                <div class="footer-text">關於我們</div>
-            </div>
-            <div>
-                <div class="footer-circle"></div>
-                <div class="footer-text">聯絡我們</div>
-            </div>
-            <div>
-                <div class="footer-circle"></div>
-                <div class="footer-text">關於我們</div>
-            </div>
-            <div>
-                <div class="footer-circle"></div>
-                <div class="footer-text">聯絡我們</div>
-            </div>
-        </div>
     </footer>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--
-
-        @media screen and (max-width: 767px) {
-            table.hidden-on-mobile {
-                display: none;
-            }
-
-            table.shown-on-mobile {
-                display: table;
-            }
-        }
-
-        @media screen and (min-width: 768px) {
-            table.hidden-on-mobile {
-                display: table;
-                max-width: 770px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            table.shown-on-mobile {
-                display: none;
-            }
-        }
-
-    <footer>
-        <table class="shown-on-mobile">
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">關於摳大</div>
-                    </td>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">支持摳大</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">聯絡摳大</div>
-                    </td>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">愛上摳大</div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table class="hidden-on-mobile">
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">關於摳大</div>
-                    </td>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">支持摳大</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">聯絡摳大</div>
-                    </td>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">愛上摳大</div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </footer>
--->
 
 </body>
 <!-- Global site tag (gtag.js) - Google Analytics -->

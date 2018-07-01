@@ -175,14 +175,7 @@
         }
 
 
-        footer {
-            background-color: #bfbfbf;
-        }
-
-        footer>table {
-            border-spacing: 45px;
-            width: 100%;
-        }
+      
 
         .header {
             margin-top: 17px;
@@ -234,52 +227,7 @@
             line-height: 1.5;
         }
 
-        footer {
-            background-color: #bfbfbf;
-            min-height: 300px;
-        }
-
-        footer>table {
-            border-spacing: 45px;
-            width: 100%;
-        }
-
-        .footer-circle {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background-color: #777;
-            margin: 0 auto;
-        }
-
-        .footer-text {
-            margin-top: 15px;
-            font-size: 18px;
-            text-align: center;
-            color: #777;
-        }
-
-        .flex-footer {
-            display: flex;
-            justify-content: space-around;
-            max-width: 529px;
-            margin: 0 auto;
-            padding-top: 65px;
-            flex-wrap: wrap
-        }
-
-        .flex-footer>div {
-            min-width: 114px;
-            margin-bottom: 48px
-        }
-
-        @media screen and (max-width:768px) {
-            .flex-footer {
-                width: 228px;
-            }
-        }
-
-
+     
         @media screen and (min-width: 768px) and (max-width: 1023px) {
             article>p,
             article>h2,
@@ -349,6 +297,7 @@
                 right: 8%;
                 top: 7%;
                 width: 6%;
+
             }
             .ig {
                 position: absolute;
@@ -356,9 +305,7 @@
                 top: 7%;
                 width: 6%;
             }
-
         }
-
 
         @media screen and (min-width: 768px) {
             .header-logobox {
@@ -408,52 +355,141 @@
                 width: 3%;
             }
         }
+        @media screen and (max-width: 768px) {
+            .computer {
+                display: none
+            }
+            .footer-bg {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+            }
+            .about-us {
+                position: absolute;
+                left:10%;
+                top: 12%;
+                width: 40%;
+                color: rgba(255, 255, 255, 0.924);
+                font-size: 20px
+            }
+
+            .about-us-word {
+                position: absolute;
+                left: 10%;
+                top: 23%;
+                width: 75%;
+                color: rgb(255, 104, 104);
+                line-height: 20px;
+                font-size: 12px;
+                max-width: 100%;
+            }
+            .contact-us {
+                position: absolute;
+                left: 10%;
+                top: 48%;
+                width: 40%;
+                color: rgba(255, 255, 255, 0.924);
+                font-size: 20px;
+            }
+
+            .contact-us-word {
+                position: absolute;
+                left: 10%;
+                top: 59%;
+                width: 100%;
+                color: rgb(255, 104, 104);
+                line-height: 15px;
+                font-size: 12px;
+                max-width: 100%;
+            }
+
+        }
+
+        @media screen and (min-width: 768px) {
+            .phone {
+                display: none
+            }
+            .footer-bg {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+            }
+            .about-us {
+                position: absolute;
+                left: 18%;
+                top: 28%;
+                width: 20%;
+                color: rgba(255, 255, 255, 0.924);
+                font-size: 30px;
+            }
+
+            .about-us-word {
+                position: absolute;
+                left: 18%;
+                top: 40%;
+                width: 30%;
+                color: rgb(255, 104, 104);
+                line-height: 35px;
+                font-size: 18px;
+                max-width: 100%;
+            }
+            .contact-us {
+                position: absolute;
+                left: 56%;
+                top: 28%;
+                width: 20%;
+                color: rgba(255, 255, 255, 0.924);
+                font-size: 30px;
+            }
+
+            .contact-us-word {
+                position: absolute;
+                left: 56%;
+                top: 40%;
+                width: 36%;
+                color: rgb(255, 104, 104);
+                line-height: 32px;
+                font-size: 18px;
+                max-width: 100%;
+            }
+        }
+
     </style>
-
-
-
 </head>
-<!--
- .related-item>div:first-child {
-            display: table-cell;
-            width: 80px;
-            height: 80px;
-            background-color: papayawhip;
-        }
-
-
-        .related-item>div:last-child {
-            display: table-cell;
-            padding-left: 20px;
-            vertical-align: middle;
-        }
--->
-
 <body style="font-family: Microsoft JhengHei, " Noto Sans TC ", "PingFang TC ", "Apple LiGothic Medium ", Roboto, "Lucida
     Grande ", "Lucida Sans Unicode ", sans-serif;
 background-color: #fff">
 
 
     <header>
+
         <div class="header-logobox" style="margin-bottom: 50px">
             <figure>
                 <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016/index.html" target="_self">
                     <img src="logo.png" alt="logo" class="liver-logo">
                 </a>
                 <img src="分隔線.png" alt="line" class="line">
-                <img src="司法人權.png" alt="law" class="law">
-                <img src="產業經濟.png" alt="economics" class="economics">
-                <img src="教育文化.png" alt="education" class="education">
-                <img src="fb.png" alt="fb" class="fb">
-                <img src="ig.png" alt="ig" class="ig">
+                <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016/index.html#justice" target="_self">
+                    <img src="司法人權.png" alt="law" class="law">
+                </a>
+                <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016/index.html#industry" target="_self">
+                    <img src="產業經濟.png" alt="economics" class="economics">
+                </a>
+                <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016/index.html#educate" target="_self">
+                    <img src="教育文化.png" alt="education" class="education">
+                </a>
+                <a href="https://www.facebook.com/" target="_self">
+                    <img src="fb.png" alt="fb" class="fb">
+                </a>
+                <a href="https://www.instagram.com/" target="_self">
+                    <img src="ig.png" alt="ig" class="ig">
+                </a>
             </figure>
         </div>
     </header>
+
     <article>
         <header>
-            <!-- 頭標
-                <span>教育</span>
-            -->
             <h1 style="margin-top: 30px">【當老師不再是鐵飯碗 2】代理教師陷重重困境　燃燒熱忱何以為繼</h1>
         </header>
         <div style="margin-bottom:15px">
@@ -523,17 +559,6 @@ background-color: #fff">
         <p>註2：有關代課、代理教師的招聘順序為：1. 具有各該教育階段、科（類）合格教師證書者；2. 無前款人員報名或前款人員經甄選未通過者，得為具有修畢師資職前教育課程，取得修畢證明書者；3. 無前款人員報名或前款人員經甄選未通過者，得為具有大學以上畢業者。</p>
         <p>「由於地處高海拔偏鄉，甚至遇過高達六招仍無人應徵缺額。」王菘郁感嘆，多數外縣市教師不願前往偏鄉，能夠幫忙的往往是本地出身的代理老師，師資有限下，也容易造成缺乏特定專業的教學，僅能依靠具有相關背景的老師來補足。以體育課為例，中和國小近年來長期缺乏體育專業的教師，只好由具大學校隊經驗的老師來教授學生保健知識、體能訓練。</p>
         <p>偏鄉加給欠缺彈性，加上誘因不足，難以吸引教師人才。「並非每一位代理教師都能享有偏鄉加給的待遇。」王菘郁語帶無奈，由於增置代理教師屬於編制外員工，無法領取地域加給，不免影響教師意願。他直言，偏鄉教育不只需要教師熱忱，更期望政府能有適度的鼓勵。</p>
-
-        <!--  抽言
-           <blockquote>
-            讓打者揮棒跌倒的投手叫摳大；跌倒後再爬起來的球隊叫傳院。＃回家路遙遠＃傳院我罩的
-        </blockquote>
-    
-        <figure>
-            <img src="coda03.jpg" alt="leading image of this article" width="100%" />
-        </figure>
--->
-
         <p style="margin-bottom: 60px;">「恭喜你成為正式老師了。」王菘郁回憶起某位代理老師考上教甄後，一年多的服務時間便與大家建立深厚感情。不僅學生捨不得老師離開，家長也是邊哭邊笑地送走老師。他感慨，在祝福之後卻是滿滿的擔憂，因為不知道還要多久，才能有下一位老師來填補空缺。
         </p>
 
@@ -614,59 +639,7 @@ background-color: #fff">
             }
         }
 
-    <footer>
-        <table class="shown-on-mobile">
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">關於摳大</div>
-                    </td>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">支持摳大</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">聯絡摳大</div>
-                    </td>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">愛上摳大</div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table class="hidden-on-mobile">
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">關於摳大</div>
-                    </td>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">支持摳大</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">聯絡摳大</div>
-                    </td>
-                    <td>
-                        <div class="footer-circle"></div>
-                        <div class="footer-text">愛上摳大</div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </footer>
--->
-
+  
 </body>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121184139-3"></script>
