@@ -206,27 +206,22 @@
             }
             .justice {
                 position: absolute;
-                left: calc(250/1280*100%);
-                top: 56%;
-                width: 180px;
-                font-size: 30px;
-                font-weight: bold;
+                left: 18%;
+                top: -25%;
+                width: 18%;
             }
             .industry {
                 position: absolute;
-                left: calc(570/1280*100%);
-                top: 56%;
-                width: 15%;
-                font-size: 30px;
-                font-weight: bold;
+                left: calc(520/1280*100%);
+                top: -25%;
+                width: 18%;
             }
             .educate {
                 position: absolute;
-                left: calc(885/1280*100%);
-                top: 56%;
-                width: 15%;
+                left: calc(815/1280*100%);
+                top: -25%;
+                width: 18%;
                 font-size: 30px;
-                font-weight: bold;
             }
         }
 
@@ -241,31 +236,25 @@
             }
             .justice {
                 position: absolute;
-                left: calc(155/1280*100%);
-                top: 60%;
-                width: 100%;
-                font-size: 24px;
-                font-weight: bold;
+                left: 12%;
+                top: -38%;
+                width: 18%;
             }
             .industry {
                 position: absolute;
-                left: calc(548/1280*100%);
-                top: 60%;
-                width: 100%;
-                font-size: 24px;
-                font-weight: bold;
+                left: calc(518/1280*100%);
+                top: -38%;
+                width: 18%;
             }
             .educate {
                 position: absolute;
-                left: calc(935/1280*100%);
-                top: 60%;
-                width: 100%;
-                font-size: 24px;
-                font-weight: bold;
+                left: calc(905/1280*100%);
+                top: -38%;
+                width: 18%;
             }
         }
 
-        @media screen and (max-width:600px) {
+        @media screen and (min-width: 381px) and (max-width:600px) {
 
             .flex-tag {
                 padding-bottom: 5%;
@@ -278,27 +267,52 @@
             }
             .justice {
                 position: absolute;
-                left: calc(20/600*100%);
-                top: 70%;
-                width: 100%;
-                font-size: 17px;
-                font-weight: bold;
+                left: calc(35/600*100%);
+                top: -56%;
+                width: 18%;
             }
             .industry {
                 position: absolute;
                 left: calc(240/600*100%);
-                top: 70%;
-                width: 100%;
-                font-size: 17px;
-                font-weight: bold;
+                top: -56%;
+                width: 18%;
             }
             .educate {
                 position: absolute;
                 left: calc(450/600*100%);
-                top: 70%;
-                width: 100%;
-                font-size: 17px;
-                font-weight: bold;
+                top: -56%;
+                width: 18%;
+            }
+        }
+
+        @media screen and (max-width:380px) {
+
+            .flex-tag {
+                padding-bottom: 5%;
+                position: relative;
+                margin-bottom: 30px;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: calc(480/600*100);
+
+            }
+            .justice {
+                position: absolute;
+                left: calc(35/600*100%);
+                top: -84%;
+                width: 18%;
+            }
+            .industry {
+                position: absolute;
+                left: calc(240/600*100%);
+                top: -84%;
+                width: 18%;
+            }
+            .educate {
+                position: absolute;
+                left: calc(445/600*100%);
+                top: -84%;
+                width: 18%;
             }
         }
 
@@ -645,12 +659,11 @@
             }
         }
 
-        @media screen and (min-width: 1024px){
-            .for-mobile { 
+        @media screen and (min-width: 1024px) {
+            .for-mobile {
                 display: none
             }
         }
-
     </style>
 
 </head>
@@ -659,11 +672,9 @@
     Grande ", "Lucida Sans Unicode ", sans-serif; background-color: #fff">
     <div style="width:100% ; margin-top: 20px ;"></div>
     <header>
-        <a href="https://rubyhsieh.github.io/rubyhsieh/homepage.html" target="_self">
-            <figure style="margin: 0 auto ; max-width:calc(400/1280*100%) ;width: 100%  height: calc(768/497*100%)">
-                <img src="desktop-02.png" alt="header" width="90%" />
-            </figure>
-        </a>
+        <figure style="margin: 0 auto ; max-width:calc(400/1280*100%) ;width: 100%  height: calc(768/497*100%)">
+            <img src="desktop-02.png" alt="header" width="90%" />
+        </figure>
     </header>
 
     <article>
@@ -672,23 +683,17 @@
         </div>
     </article>
     <div class="flex-tag">
-        <a href="#justice">
-            <div class="item1">
-                <div class="justice">司法．人權</div>
-            </div>
-        </a>
-
-        <a href="#industry">
-            <div class="item1">
-                <div class="industry">產業．經濟</div>
-            </div>
-        </a>
-
-        <a href="#educate">
-            <div class="item1">
-                <div class="educate">教育．文化</div>
-            </div>
-        </a>
+        <figure>
+            <a href="#justice">
+                <img src="司法人權.png" alt="justice" class="justice">
+            </a>
+            <a href="#industry">
+                <img src="產業經濟.png" alt="industry" class="industry">
+            </a>
+            <a href="#educate">
+                <img src="教育文化.png" alt="educate" class="educate">
+            </a>
+        </figure>
     </div>
 
 
@@ -844,8 +849,7 @@
             </ol>
 
             <div class="carousel-inner">
-                <a href="https://joy2bitme.github.io/streetselling/index.html"
-                    target="_blank"></a>
+                <a href="https://joy2bitme.github.io/streetselling/index.html" target="_blank"></a>
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="sell.jpg" alt="First slide">
                 </div>
@@ -854,8 +858,7 @@
                 <div class="carousel-item">
                     <img class="d-block w-100" src="march.jpg" alt="Second slide">
                 </div>
-                <a href="https://foreversuneasy.github.io/liver-burn/Probation/index.html"
-                    target="_blank"></a>
+                <a href="https://foreversuneasy.github.io/liver-burn/Probation/index.html" target="_blank"></a>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="observer.jpg" alt="Third slide">
                 </div>
@@ -890,8 +893,7 @@
                 <div class="carousel-item">
                     <img class="d-block w-100" src="doll.jpg" alt="Second slide">
                 </div>
-                <a href="https://rubyhsieh.github.io/rubyhsieh/index.html"
-                    target="_blank"></a>
+                <a href="https://rubyhsieh.github.io/rubyhsieh/index.html" target="_blank"></a>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="bride.jpg" alt="Third slide">
                 </div>
