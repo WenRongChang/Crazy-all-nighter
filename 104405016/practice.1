@@ -1,0 +1,889 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+    <title>爆肝者</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft JhengHei", "Noto Sans TC", "PingFang TC", "Apple LiGothic Medium", Roboto, "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+            background-color: #fff;
+        }
+
+        header>span {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 2.25;
+        }
+
+        header>h1 {
+            margin-top: 11px;
+            font-size: 34px;
+            font-weight: bold;
+            line-height: 1.32;
+        }
+
+        header,
+        article>header {
+            max-width: calc(270/320*100%);
+            margin: 0 auto
+        }
+
+        article {
+            color: #2d2d2d;
+        }
+
+        article>header>span {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 2.25;
+        }
+
+        article>p,
+        article>h2,
+        article>blockquote,
+        article>ul,
+        article figcaption,
+        article>div,
+        article>header {
+            max-width: calc(270/320*100%);
+            margin: 0 auto;
+        }
+
+        article>p,
+        article>blockquote {
+            font-size: 18px;
+            line-height: 2.0;
+            letter-spacing: 0.9px;
+            margin-top: 40px;
+        }
+
+        article>blockquote {
+            padding-left: 21px;
+            color: #6d6d6d;
+            border-left: 1px solid #6d6d6d;
+        }
+
+
+        article figcaption {
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.8px;
+            color: #6d6d6d;
+            margin-top: 15px;
+        }
+
+        article>h2 {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1.1px;
+            line-height: 1.64;
+            margin-top: 40px;
+        }
+
+
+
+        @media screen and (min-width:1024px) {
+            header {
+                width: 900px;
+            }
+
+            article,
+            article>header {
+                max-width: 900px;
+                margin: 0 auto;
+            }
+
+            .pic-of-chart {
+                display: none
+            }
+
+        }
+
+        @media screen and (max-width:1023px) {
+            .chart01 {
+                display: none;
+            }
+
+            .chart02 {
+                display: none
+            }
+
+        }
+
+
+        @media screen and (min-width:768px) and (max-width:1023px) {
+            header {
+                width: 678px
+            }
+
+            article,
+            article>header {
+                max-width: 678px;
+                margin: 0 auto;
+            }
+        }
+
+        .authors {
+            margin-right: 30px;
+            font-size: 15px;
+            line-height: 2.25;
+        }
+
+        a {
+            color: #2d2d2d;
+            text-decoration: none;
+            border-bottom: 1px solid #c71b0a;
+        }
+
+        article>figure {
+            margin: 0;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            article>figure {
+                width: 678px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            article>figure {
+                width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .chart01 {
+            position: relative;
+            padding-bottom: calc(380/700*100%);
+        }
+
+        .chart02 {
+            position: relative;
+            padding-bottom: calc(980/852*100%);
+        }
+
+        body {
+            font-family: "Microsoft JhengHei", "Noto Sans TC", "PingFang TC", "Apple LiGothic Medium", Roboto, "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+            background-color: #F1F1F1;
+        }
+
+
+        footer>figure {
+            margin: 0px 0px 0px 0px;
+            width: 100%;
+        }
+
+        article>ul {
+            list-style-type: none;
+            padding-left: 0;
+            width: 100%;
+        }
+
+
+        .header {
+            margin-top: 17px;
+            margin-bottom: 17px;
+        }
+
+        .introduction {
+            font-size: 22px;
+            line-height: 1.82;
+            letter-spacing: 1.6px;
+            text-align: justify;
+            margin-top: 30px;
+        }
+
+        .related-text {
+            font-size: 16px;
+            line-height: 2.25;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .related-items {
+            margin-bottom: 60px;
+        }
+
+        .related-item {
+            background-color: #e1e1e1;
+            margin-top: 20px;
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        .related-item>img {
+            width: 20%;
+            vertical-align: middle;
+        }
+
+        .related-item>div {
+            display: inline-block;
+            width: 70%;
+            padding-left: 20px;
+            vertical-align: middle;
+            line-height: 1.5;
+        }
+
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+            article>p,
+            article>h2,
+            article>blockquote,
+            article>ul,
+            article figcaption,
+            article>div,
+            article>header,
+            article>ul {
+                width: 550px;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+
+            article>p,
+            article>h2,
+            article>blockquote,
+            article>ul,
+            article figcaption,
+            article>div,
+            article>header {
+                max-width: 756px;
+            }
+
+            article>ul {
+                width: 700px;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .header-logobox {
+                padding-bottom: 45%;
+                position: relative;
+                margin-bottom: 55 px;
+            }
+
+            .liver-logo {
+                position: absolute;
+                left: 32%;
+                width: 35%;
+            }
+
+            .line {
+                position: absolute;
+                left: 0%;
+                top: 95%;
+                width: 100%;
+                height: 1%
+            }
+
+            .law {
+                position: absolute;
+                left: 15%;
+                top: 96%;
+                width: 18%;
+            }
+
+            .economics {
+                position: absolute;
+                left: 40.5%;
+                top: 96%;
+                width: 18%;
+            }
+
+            .education {
+                position: absolute;
+                left: 65.5%;
+                top: 96%;
+                width: 18%;
+            }
+
+            .fb {
+                position: absolute;
+                right: 8%;
+                top: 7%;
+                width: 6%;
+
+            }
+
+            .ig {
+                position: absolute;
+                right: 0%;
+                top: 7%;
+                width: 6%;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .header-logobox {
+                padding-bottom: 20%;
+                position: relative;
+            }
+
+            .liver-logo {
+                position: absolute;
+                left: 0;
+                width: 20%
+            }
+
+            .line {
+                position: absolute;
+                right: 0%;
+                top: 35%;
+                width: 75%;
+                height: 1%
+            }
+
+            .law {
+                position: absolute;
+                left: 35%;
+                top: 36%;
+                width: 15%;
+            }
+
+            .economics {
+                position: absolute;
+                left: 55%;
+                top: 36%;
+                width: 15%;
+            }
+
+            .education {
+                position: absolute;
+                left: 75%;
+                top: 36%;
+                width: 15%;
+            }
+
+            .fb {
+                position: absolute;
+                right: 4%;
+                top: 2%;
+                width: 3%;
+            }
+
+            .ig {
+                position: absolute;
+                right: 0%;
+                top: 2%;
+                width: 3%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .computer {
+                display: none
+            }
+
+            .footer-bg {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .about-us {
+                position: absolute;
+                left: 10%;
+                top: 10%;
+                width: 40%;
+                color: rgba(255, 255, 255, 0.924);
+                font-size: 20px
+            }
+
+            .about-us-word {
+                position: absolute;
+                left: 10%;
+                top: 18%;
+                width: 75%;
+                color: rgba(255, 255, 255, 0.924);
+                line-height: 20px;
+                font-size: 12px;
+                max-width: 100%;
+            }
+
+            .contact-us {
+                position: absolute;
+                left: 10%;
+                top: 52%;
+                width: 40%;
+                color: rgba(255, 255, 255, 0.924);
+                font-size: 20px;
+            }
+
+            .contact-us-word {
+                position: absolute;
+                left: 10%;
+                top: 62%;
+                width: 100%;
+                color: rgba(255, 255, 255, 0.924);
+                line-height: 10px;
+                font-size: 12px;
+                max-width: 100%;
+            }
+
+            .click-to-know {
+                position: absolute;
+                left: 35%;
+                top: 8%;
+                width: 30%;
+                color: rgb(255, 104, 104);
+                line-height: 35px;
+                font-size: 12px;
+                max-width: 100%;
+
+            }
+
+        }
+
+        @media screen and (min-width: 768px) {
+            .phone {
+                display: none
+            }
+
+            .footer-bg {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .about-us {
+                position: absolute;
+                left: 18%;
+                top: 28%;
+                width: 20%;
+                color: rgba(255, 255, 255, 0.924);
+                font-size: 30px;
+            }
+
+            .about-us-word {
+                position: absolute;
+                left: 18%;
+                top: 40%;
+                width: 30%;
+                color: rgba(255, 255, 255, 0.924);
+                line-height: 35px;
+                font-size: 18px;
+                max-width: 100%;
+            }
+
+            .contact-us {
+                position: absolute;
+                left: 56%;
+                top: 28%;
+                width: 20%;
+                color: rgba(255, 255, 255, 0.924);
+                font-size: 30px;
+            }
+
+            .contact-us-word {
+                position: absolute;
+                left: 56%;
+                top: 40%;
+                width: 36%;
+                color: rgba(255, 255, 255, 0.924);
+                line-height: 32px;
+                font-size: 18px;
+                max-width: 100%;
+            }
+
+            .click-to-know {
+                position: absolute;
+                left: 34%;
+                top: 28.8%;
+                width: 30%;
+                color: rgb(255, 104, 104);
+                line-height: 35px;
+                font-size: 16px;
+                max-width: 100%;
+
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body style="font-family: Microsoft JhengHei, " Noto Sans TC ", " PingFang TC ", " Apple LiGothic Medium ", Roboto, "
+    Lucida Grande ", " Lucida Sans Unicode ", sans-serif;
+background-color: #fff">
+
+
+    <header>
+
+        <div class="header-logobox" style="margin-bottom: 50px">
+            <figure>
+                <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016/index.html" target="_self">
+                    <img src="logo.png" alt="logo" class="liver-logo">
+                </a>
+                <img src="分隔線.png" alt="line" class="line">
+                <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016/index.html#justice" target="_self">
+                    <img src="司法人權.png" alt="law" class="law">
+                </a>
+                <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016/index.html#industry" target="_self">
+                    <img src="產業經濟.png" alt="economics" class="economics">
+                </a>
+                <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016/index.html#educate" target="_self">
+                    <img src="教育文化.png" alt="education" class="education">
+                </a>
+                <a href="https://www.facebook.com/" target="_self">
+                    <img src="fb.png" alt="fb" class="fb">
+                </a>
+                <a href="https://www.instagram.com/" target="_self">
+                    <img src="ig.png" alt="ig" class="ig">
+                </a>
+            </figure>
+        </div>
+    </header>
+
+    <article>
+        <header>
+            <h1 style="margin-top: 30px">【當老師不再是鐵飯碗】代理教師擔起少子化的必然與不公</h1>
+        </header>
+        <div style="margin-bottom:15px">
+            <span class="authors">專題記者／
+                <b>
+                    <a href="https://unews.nccu.edu.tw/?s=陳棟+張玟榕+李昶毅+毛凱恩" target="_blank">陳棟、張玟榕、李昶毅、毛凱恩</a>
+                </b>
+            </span>
+
+            <span class="authors">圖表製作／
+                <b>
+                    <a href="https://unews.nccu.edu.tw/?s=陳棟+張玟榕+李昶毅+毛凱恩" target="_blank">林庭寬、李權洲</a>
+                </b>
+            </span>
+            <span class="authors">
+                <b>｜2019.05.05</b>
+            </span>
+        </div>
+        <figure style="margin-top: 20px; width: 100% ">
+            <img src="photo01.jpg" alt="leading image of this article" width="100%" />
+        </figure>
+        <p class="introduction">「老師，你是不是也要走了？」每到學期末，蘭嶼朗島國小學生總會這樣猜測。短短的一句話，述說著孩子心裡的不捨及代理教師的高流動性。一年一聘，明年到底會在哪裡，代理教師自己也沒把握。
+        </p>
+        <p class="introduction">
+            少子化浪潮下，全台國中小班級數不斷下滑，所需教師數量也相應減少。為避免超額教師問題，待正式教師退休後，各地方政府多採「遇缺不補」策略，以聘請代理教師補足教育現場的人力缺口。然而，一年一聘的代理教師不僅工作穩定度低，同時面臨工作內容與正式教師雷同，薪資福利卻足足矮了一截的問題。
+        </p>
+        <h2 class="title">少子化勢不可擋　聘任代理成主流</h2>
+        <p>
+            根據教育部統計，全國公立國小新生近十年減少約10萬人，班級數下降近2500班；國中端同樣短少近10萬人，縮減約1500班。扣除101學年度適逢龍年出生的國中生入學，總人數較去年攀升外，整體呈現下降趨勢。 </p>
+        <p style="margin-bottom:30px;">
+            由於班級數驟降，各級學校教師員額編制數逐年下修。這同時反映在正式教師甄選名額上，錄取人數近十年持續下探。桃園市立福豐國中前校長宋慶瑋分析，除了少子化外，年金改革也導致許多老師延後退休時間，「很多縣市近幾年乾脆不辦教師甄試，想當老師的只剩代理機會。」
+        </p>
+
+        <div class="chart01">
+            <iframe style="position:absolute" width="100%" height="100%"
+                src="https://buya7mv7tppktwd2to6drw-on.drv.tw/webPage/" frameborder="0"></iframe>
+        </div>
+
+        <a href="https://buya7mv7tppktwd2to6drw-on.drv.tw/webPage/" target="_blank">
+            <figure class="pic-of-chart">
+                <img src="chart01.jpg" alt="leading image of this article" width="100%" />
+            </figure>
+        </a>
+
+        <p style="margin-top:30px">
+            以基隆市為例，已連2年沒有甄聘國中正式教師，基隆市立暖暖高級中學校長甘邵文表示，因現在控管教師員額，只能招考代理教師。苗栗縣立西湖國中代理教師唐嘉聰也指出，目前改聘代理教師已成為主流，「去年學校調走一位數學正式老師，後來就是聘代理的了。」
+        </p>
+        <p style="margin-bottom: 45px">
+            因此，不同於上述因少子化而不斷減少的數據，近年代理教師可謂逆勢上揚。教育部從96學年度開始蒐集代理教師數據，當年度公立國中小長期代理教師數共計8613人，而後到103學年度時人數創歷史新高，已一路飆升至約18000人。後兩年代理教師總數雖微幅下降，然而是因教學現場所需員額降低所致，代理教師佔公立教師總數比率仍逐年上升，105學年度已增至約10%，其中連江縣更達到近20%。
+        </p>
+
+        <div class="chart02" style="max-width:1280px">
+            <iframe style="position:absolute" width="100%" height="100%" src="https://hsu-chen.github.io/vismap/"
+                frameborder="0" scrolling="no"></iframe>
+        </div>
+
+        <a href="https://hsu-chen.github.io/vismap/" target="_blank">
+            <figure class="pic-of-chart">
+                <img src="chart02.jpg" alt="leading image of this article" width="100%" />
+            </figure>
+        </a>
+
+        <h2 style="margin-top:30px">數字上升的秘密　控管與超額教師</h2>
+        <p style="margin-top:20px">
+            代理教師制度存在已久，原為正式教師因故請長假或不在職時，由代理教師填補其留下的課務。在少子化的趨勢下，為避免教師需求量下降過快，產生超額教師問題，代理教師的雇用彈性，便成為控管教師額度的一大利器。
+        </p>
+        <p>
+            「超額教師很棘手、很麻煩。」宋慶瑋坦言，校方在處理超額教師的立場上頗為難為，不僅需決定誰才是超額人選，後續還得負責輔導遷調或介聘到其他職位。然而鄰近學校不見得剛好有缺額，超額教師若是無法成功轉職，雖可依《教師法》第15條予以資遣，但面對高額的遣散經費，校方多數會選擇盡力輔導就業。
+        </p>
+        <figure>
+            <img src="fire-teacher.jpg" alt="leading image of this article" width="100%" />
+        </figure>
+        <p>
+            不同於正式教師有工作權的保障，代理教師「處理」起來相對容易。唐嘉聰表示，根據學區內的國小學童數統計，西湖國中後年可能就得面對減班命運。依照教育部員額編制準則，國中班級數每減少1班，教師員額數就會減少2人，「減班一定是先砍代理老師，不可能動到正式教師。」他補充，因代理教師是一年一聘，如果學校不開缺就只好離開，「沒有辦法，這是大家都心知肚明的遊戲規則。」
+        </p>
+        <h2 style="margin-top:30px">快速變動的大環境　不穩定的代理身分</h2>
+
+        <p>
+            「有家長直接跑來校長室叫我留人，但沒缺額真的沒辦法啊！」宋慶瑋舉例，曾有位代理教師非常優秀，擔任班導師很得學生與家長的喜愛，然而第三年時，因為缺額減少，再不得已還是無法續聘，接手的正式教師反倒表現得沒有如此出色。「為了爭取續聘的機會，代理教師常常表現的比正式教師認真。」宋慶瑋感嘆，遇到這種情況，能做的只剩代理教師到他校應徵時，幫忙美言幾句。
+        </p>
+
+        <p>
+            「待久當然會有感情，但時間到了就是該離開的時候。」唐嘉聰表示，當初因緣際會來到苗栗教書，即使因減班得要離開也是種緣分，能留在同一間學校這麼多年已經算是幸運，「有的代理老師很辛苦，一年換一個學校，像浮萍沒有根。」國中國文代理教師「小君」（化名）曾陸續任教於北部三縣市四所學校，其中一間學校甚至只待了一學期。
+        </p>
+        <h2 style="margin-top:30px">跟老師一起離開的　是孩子的信任</h2>
+        <p>
+            當被問及高流動率的師資是否會對學生造成影響時，每位受訪者的回答都是「會啊」，斬釘截鐵，毫無疑問。宋慶瑋說：「國中小學童處於心智發展階段，老師的角色非常重要。」苗栗縣立外埔國小校長紀介五解釋，孩子在學習上需要建立穩定的師生關係，而信任是很重要的前提，若剛建立完良好的師生互動關係，老師又馬上面臨變動，對於學生會有很明顯的影響。
+        </p>
+
+        <p>
+            唐嘉聰也認為，國中小的學生都需要老師的引導，當學生好不容易有個互動良好、可以依賴的老師，結果開學發現他就不見了，新的老師從頭再來，並不一定會產生好的互動。曾任教於朗島國小的代理教師張恒睿指出，這所位於蘭嶼的學校老師流動率高，學生總會猜測哪位老師是不是將要離開，對於老師的信任感也會降低。
+        </p>
+        <p style="margin-bottom: 60px;">
+            「最後確定要離開，我選擇好好跟他們說再見。」張恒睿表示，蘭嶼的孩子知道老師要走以後，就不太會鑽牛角尖。但真的要離開時，他的心裡也曾動搖，思考接手的會是怎樣的老師。離開蘭嶼後，張恒睿仍與學生保持聯絡，向他們分享好的學習資源，「想做好自己當老師的責任，但現況代理教師就是來來去去，也沒辦法。」
+        </p>
+        <header>
+            <h1 style="margin-top: 30px">【當老師不再是鐵飯碗 2】代理教師陷重重困境　燃燒熱忱何以為繼</h1>
+        </header>
+        <p class="introduction" style="margin-top:40px ; margin-bottom: 30px">
+            代理教師在教學現場的角色日益吃重，除了流動率高的問題外，其所受的待遇也與正式教師落差甚大，不若正式教師擁有完整聘期、可依累計年資調薪等福利保障。桃園市立福豐國中前校長宋慶瑋說：「不只同工不同酬，有的代理教師比正式老師付出得更多，得到的卻更少。」
+        </p>
+
+        <h2 class="title">困境1：每年固定失業　卻難領補助</h2>
+        <p>根據《中小學兼任代課及代理教師聘任辦法》，訂定代理教師聘期為地方政府權限，導致各縣市代理教師待遇不同。多數縣市僅8月底至隔年7月初給薪，聘期只有10到11個月，即使在薪資待遇最佳的台北市服務，代理教師也需在獲學校續聘後才享有完整年薪。
+        </p>
+        <p>代理教師並非如正式教師參加公保，而是比照一般勞工投保勞保。在暑假因聘期不足一年，而被迫失業期間，理應可申請失業補助。然而宋慶瑋解釋，《就業保險法》規定失業一個月後使得請領，再加上兩周的審查期，期間若是收到聘書將會失去請領資格，「代理教師常因『已知即將就業不能申請失業補助』為由遭拒，但實質上近2個月都是無薪的。」
+        </p>
+        <p>曾任台東縣立朗島國小代理教師的張恒睿表示，暑假對他們來說就是「失業」，因此曾考慮請領失業給付。但他的前輩老師透露，申請時勞工局態度不僅不友善，還會刁難代理教師，令他望之怯步，只好在其餘月份省吃儉用，以省下的錢度過暑假。
+        </p>
+
+        <p style="margin-bottom:40px;">
+            在新竹地區任教的劉姓代理教師指出，由於暑假的兩個月沒有收入，「只能盡量在學期中賺多一點錢」，想辦法接下學校內的額外工作。他感嘆，雖然非常勞累，但還是陸續接過資優班課程、補救教學與暑輔，藉此賺取鐘點費。
+        </p>
+        <div class="chart02" style="max-width:1280px">
+            <iframe style="position:absolute" width="100%" height="100%"
+                src="https://hsu-chen.github.io/vismap/?number=0" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+        <h2 class="title">困境2：暑期失業不給薪　無償付出做功德</h2>
+
+        <p>「一般來說暑假除了行政職人員外，不會有教師留在學校內。」張恒睿舉自身經歷為例，像是在蘭嶼的暑假，常吸引許多大學生來辦夏令營，可是偏鄉常遇到缺乏人手的問題，即便朗島國小並不會提供薪水，他也自願去擔任營隊老師。這類自發性、無償的付出，常出自於代理教師身上。
+        </p>
+        <p>代理教師若身兼導師或行政職，因工作性質具延續性，並不會因學生放暑假而完全終止。唐嘉聰舉例，同校有位代理老師擔任訓導組長一職，即使暑假沒有給付薪水，仍照常到校上班。宋慶瑋解釋，針對兼任行政職的代理教師，多數縣市允許延長聘期到7月31日，如果順利獲得原校續聘，代理教師幾乎暑假都在學校上班，但八月這段時間仍無薪水，實在不合理。
+        </p>
+        <p>嘉義縣立中和國小教導主任王菘郁透露，教師在學期結束須完成教學整理和成績匯報等行政工作，但代理教師在七月並無薪資，對於願意仔細完成回報的教師，不但犧牲不少時間，更如同是無薪加班。若教師選擇在暑假前匆忙行政，缺乏充足時間下，也容易造成工作品質下降。
+        </p>
+
+        <h2 class="title">困境3：一年一聘　矮人一截</h2>
+
+        <p>「正式教師的薪水會隨年資提升，但代理教師因為是一年一聘，就沒有這個資格。」苗栗縣西湖國中代理教師唐嘉聰指出，即使現在代理老師可以續聘，但還是不能累積年資。張恒睿認為，年資代表教師的經驗與專業度，應該確實計算代理教師的服務年數。在現行制度下，代理教師因無法逐年調薪，每年皆為提領基本薪額（註1）。
+        </p>
+        <p>代理教師在其餘收入與加給上更是相差許多，年終獎金因聘期不完整而有落差，考績獎金與特休都因年資未滿一年而泡湯。此外，代理教師並非正式教師，不得投保公保，因此即便工作內容雷同，也沒有公保退休金。「代理教師如同體制下的小媳婦。」宋慶偉感嘆，代理教師除了薪資外，其餘皆比照正式教師規範，薪資給付卻不合理，對代理教師來說是不公平的。
+        </p>
+        <p style="margin-bottom:30px">
+            註1：基本薪額依學歷、有無教師證、修畢教育學程而定，最低（大學畢業未修教育學程、無教師證）是20440，最高則是30430元（博士畢業修畢教育學程且具教師證），實際薪資會因是否有相關加給而變動。</p>
+        <figure>
+            <img src="chart03.jpg" alt="leading image of this article" width="100%" />
+        </figure>
+        <h2 class="title">困境4：身兼行政職　背後辛酸無人知</h2>
+        <p>代理教師除了薪水會被苛扣外，更可能需負擔吃力不討好的行政職。「屎缺都丟給你。」國中國文代理教師「小君」（化名）表示，代理教師剛到新環境，既沒人脈也沒背景，若校方要求接任行政職，普遍不敢拒絕，甚至資深教師會給代理教師壓力，要求接任教學組長等不受歡迎的職位。唐嘉聰說：「雖然應徵時就會討論可不可以兼任行政職，但如果不能配合學校就會是第二考量，代理教師很難去拒絕。」
+        </p>
+        <p>「桃園市國中的生教組長大概有1/3都是代理老師。」宋慶瑋解釋，生教組長常需利用下班後或假日時間關懷中輟生，需要額外付出許多心力，這種正式教師無意願的組長職務，便常常落在代理教師身上。</p>
+        <p>小君透露，有代理教師擔任教學組長時，因為課程安排無法兼顧各方需求，只好犧牲自己，擔下有爭議的課堂時段。他認為，這種「欺負」代理教師與新進教師的文化，「要看校長、主任有沒有肩膀解決。」他經歷過原校長放任老鳥欺負菜鳥，但新校長上任後雷厲風行，使高層對代理教師態度轉變，從而杜絕此種文化。
+        </p>
+        <p>張恒睿剛到朗島國小的前兩年並沒有擔任行政職，直到第三年人事異動，正式教師僅剩四位時，才被分配資訊組長一職。隔一個學年度，具輔導專長的他，甚至同時兼任輔導業務、資訊組長，以及導師工作。「工作量爆增下會有點累，但還能承受啦。」他苦笑地說，即便無奈也只能撐著。
+        </p>
+        <p>另一方面，基隆市立暖暖高級中學校長甘邵文提到，代理教師兼任行政工作，必須獲得縣市政府教育主管機關同意，沒有特殊理由並不會要求代理教師兼任行政職，目前暖暖國中的兩位代理教師亦無兼行政。他認為，由於各縣市政府態度不一，因此代理教師兼任行政職的狀況是否嚴重，會依縣市而有所差異。
+        </p>
+        <p>張恒睿也表示，基本上學校會盡可能讓正式教師兼任行政職，算是校方與教師間的共識及原則，但若沒那麼多正式教師，還是只能依靠代理教師擔任行政職，這便是小校的困擾。王菘郁則感嘆，偏鄉人手缺乏，仍無法避免代理教師兼任社團組長等行政職，若要同時準備教師甄試難免會有些喘不過氣，校方也只能盡量避免交付過多的工作量。
+        </p>
+
+        <h2 class="title">困境5：招不到、留不住　偏鄉師資挑戰大</h2>
+        <p>偏鄉地區因交通不便、生活機能不佳，以及老師須負擔較多的行政業務量等緣由，導致代理教師報考意願低落。因此每逢開學季，常會出現有偏鄉國中小仍招不到老師的新聞。不同於正式教師若至偏遠地區服務，擁有久留可快速累積薪資、想換學校有優先順位等福利，代理教師的待遇幾乎與在市中心任職無異。因此即使找到合適的代理教師，也少有教師願意久留，造成教師流動率偏高的問題。現行缺乏對偏鄉代理教師的差別性積極待遇，導致原先就處於弱勢的偏鄉，因師資而更顯弱勢。
+        </p>
+        <p>以在蘭嶼的朗島國小為例，因位處離島，常常招考至第三招卻依然沒有老師願意前來服務。張恒睿點出，代理教師往往只願意停留一年，遇到願意用心深耕的好老師的機會實在不多。而立足於短暫停留的前提下，有些代理教師教學上便會應付了事，影響學生學習品質。但他認為，不論如何，教師都應展現專業及做好本分。
+        </p>
+        <p>連江縣政府教育處學務管理科科長曹琇君也坦言，願意來離島的老師本來就比較少，三招後才聘到老師是常態，這時招到的老師通常不具教師證（註2）。他補充，照理有教師證的老師水準會最高，但這些僅具大學以上學歷的老師有的也很認真、很有愛心，反而更適合離島的小朋友。
+        </p>
+        <figure>
+            <img src="hire-teacher.png" alt="leading image of this article" width="100%" />
+        </figure>
+        <p>註2：有關代課、代理教師的招聘順序為：1. 具有各該教育階段、科（類）合格教師證書者；2. 無前款人員報名或前款人員經甄選未通過者，得為具有修畢師資職前教育課程，取得修畢證明書者；3.
+            無前款人員報名或前款人員經甄選未通過者，得為具有大學以上畢業者。</p>
+        <p>「由於地處高海拔偏鄉，甚至遇過高達六招仍無人應徵缺額。」王菘郁感嘆，多數外縣市教師不願前往偏鄉，能夠幫忙的往往是本地出身的代理老師，師資有限下，也容易造成缺乏特定專業的教學，僅能依靠具有相關背景的老師來補足。以體育課為例，中和國小近年來長期缺乏體育專業的教師，只好由具大學校隊經驗的老師來教授學生保健知識、體能訓練。
+        </p>
+        <p>偏鄉加給欠缺彈性，加上誘因不足，難以吸引教師人才。「並非每一位代理教師都能享有偏鄉加給的待遇。」王菘郁語帶無奈，由於增置代理教師屬於編制外員工，無法領取地域加給，不免影響教師意願。他直言，偏鄉教育不只需要教師熱忱，更期望政府能有適度的鼓勵。
+        </p>
+        <p style="margin-bottom: 60px;">
+            「恭喜你成為正式老師了。」王菘郁回憶起某位代理老師考上教甄後，一年多的服務時間便與大家建立深厚感情。不僅學生捨不得老師離開，家長也是邊哭邊笑地送走老師。他感慨，在祝福之後卻是滿滿的擔憂，因為不知道還要多久，才能有下一位老師來填補空缺。
+        </p>
+        <header>
+            <h1 style="margin-top: 30px">【當老師不再是鐵飯碗 3】提升代理教師待遇　保障學生受教權</h1>
+        </header>
+        <figure style="margin-top: 20px; width: 100% ">
+            <img src="photo02.JPG" alt="leading image of this article" width="100%" />
+        </figure>
+        <p class="introduction" style="margin-top:40px ; margin-bottom: 30px">代理教師因缺額不穩定、待遇不佳等因素，導致教育現場師資流動率大，影響學生的學習成效。提升待遇不僅是完善代理教師的工作權，更保障學童擁有穩定且平等的受教機會。
+        </p>
+        <h2 class="title">解方1：從財政入手　照實計算聘期與年資</h2>
+        <p>基隆市立暖暖高級中學校長甘邵文認為，代理教師有存在的必要，「但如果是代正職缺，就應該有同等的權利義務。」目前不公平的狀況，應先從薪資等福利問題著手改善。教育部在前年宣布，106學年度將推動以13.5個月的完整聘期僱用代理教師，希望透過提升待遇解決目前流動率高、薪資水準不公等問題。</p>
+        <p style="margin-bottom:50px;">「代理教師畢竟不是正式教師，待遇相比下仍應有所落差，但確實需適度提升。」桃園市立福豐國中前校長宋慶瑋認為，續聘的代理教師應比照正式教師，得累計年資。他指出，代理教師若暑期無課務與工作，不給薪尚稱合理，但對於兼行政職的代理教師，有服務事實就應給予完整的薪資報酬，「畢竟這類教師的付出，有些還比正式教師更多、更有績效，不能長期苛扣他們啊。」</p>
+
+        <figure>
+            <img src="educate02.jpg" alt="leading image of this article" width="100%" />
+            <figcaption>宋慶瑋認為給予的代理教師較完整的待遇，有助於校務運作。圖／陳棟攝</figcaption>
+        </figure>
+        <figure>
+            <img src="profile.png" alt="leading image of this article" width="100%" />
+        </figure>
+        <p>不過依照《地方制度法》，代理教師聘期為地方政府負責業務，儘管教育部欲推動加薪，實際仍需看各縣市政府態度與作為。目前僅台北市針對獲得續聘一學年的代理教師，提供完整的12個月薪水與1.5個月年終獎金，符合教育部13.5個月薪資的目標。但其餘地方政府並不買帳，政策淪為空頭支票。國中國文代理教師「小君」（化名）認為，目前狀況出在財政上，各地方政府應該要顧好財政，才能有經費提升代理教師的待遇。</p>
+        <p>教育部國民及學前教育署（下稱國教署）則回覆，為引導地方政府將代理教師聘期比照正式教師，將持續補助經費並持續追蹤。不過由於聘任代理教師屬於地方政府權責，考量各地財政或有困境，並無強制規範代理教師聘期。國教署強調，代理教師的薪資發放應符合公平正義原則，建議各地方政府聘期應延長到隔年7月31日為止。</p>
+
+        <p style="margin-bottom:40px;">「我們主張缺額多久，就給多久的聘期。」全國教師工會總聯合會理事長張旭政指出，各地代理教師薪資不足一年且聘期不一的辦法很簡單，「根本不用修法」。他指出教育部只需根據《中小學兼任代課及代理教師聘任辦法》之立法精神，針對該法
+            <a href="http://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=H0150024" target="_blank">第二條</a>發布關於聘期之函釋，即可使聘期長度等同實際出缺期間。 </p>
+
+        <h2 class="title">解方2：增加師資穩定性　勿讓偏鄉更為弱勢</h2>
+
+        <p>民國101年修正《中小學兼任代課及代理教師聘任辦法》規定，開放擁有教師證及在偏鄉服務的代理教師最多可續聘兩次，無須每年重新再辦甄選，希望藉此提升師資穩定性。若三年期滿欲留在原校任教，則需校方有開缺，再與其他報名者競爭缺額。
+        </p>
+        <p>「教師的高流動率問題仍應回歸到各縣市不願意開放正式缺額。」曾任台東縣立朗島國小的代理教師張恒睿認為，代理老師相較於正式老師流動率自然更高，一旦考上正式教師便會離開。若是校內代理教師佔多數，那麼師資必然無法穩定。他也強調，校風的好壞、老師間能否有為學生付出的共識，也是影響教師去留的重要關鍵。</p>
+        <p>偏鄉學校具有交通不便等先天限制，加上缺少誘因，時常難以招募合適代理教師，光師資層面城鄉差距就非常明顯。苗栗縣立西湖國中老師唐嘉聰感嘆，市區開代理缺時報名者多，透過篩選不會有素質參差不齊的問題，但有的偏鄉甚至開學時還招不到老師。</p>
+        <p>「不少偏鄉老師待不滿兩個月就走了。」宋慶瑋感嘆，不能單靠教師本身熱忱來維持師資穩定，而是需要政府提出實際的補助或優惠，才能真正留住教師。他建議，政府首先應保障代理教師工作權，使其不受「最多三年」的延聘限制，讓現有代理教師無後顧之憂，能專注教學。許多代理教師目標為成為正式教師，因此未來考教師甄試時，可給在偏鄉服務一定年資的代理教師額外加分，提高錄取率，同時也可提高偏鄉加給，增加經濟層面誘因。</p>
+        <p>張旭政則認為，建議教育部可強制要求地方政府提高正式教師比例，並將代理教師的員額放到都市地區學校。因為都市地區學校規模較大，校務及教學運作較能應對，「如果小校只有十個老師，但代理教師就有三、四個，這樣小校的運作可能就會捉襟見肘。」</p>
+        <p>國教署提到，依統計資料顯示，國小代理教師獲再聘比率自99學年度之38.6%上升至105學年度為60.5%，國中再聘比率則是自99學年度之38.6%上升至105學年度為58.39%，國中小代理教師再聘比率均逐年增加，師資流動的影響已經逐年縮減。針對偏遠地區學校，國教署表示，目前正在訂定相關辦法，提供師資聘任方面、增補員額、宿舍補助、久任獎金等各項措施，提高教師續留偏遠地區學校任教的意願。</p>
+        <h2 class="title">解方3：專聘教師　代理與偏鄉困境新出路？</h2>
+
+        <p>民國106年，立法院三讀通過《偏遠地區學校教育發展條例》，增設「專案聘任教師」機制，希望藉此提升偏鄉師資穩定性。專聘教師由地方主管機關辦理公開甄選，須具教師證才能報考，錄取後會分發至偏鄉地區服務，聘期一次最長兩年，可續聘兩次，至多能在原校執教六年。服務滿六年後，若有通過第二專長訓練，並且表現優良者，校方可再續聘六年。</p>
+        <p>「基本上專聘就是代理教師的性質，但是不用每年考，享有比較穩定的待遇。」新北市澳底國小校長李延昌指出，專聘制度最大誘因在於六年期滿後，參與正式教師甄選享有額外加分，大幅提升錄取機率。</p>
+        <p>相較於現行的代理教師制度，專聘教師具長久任教的誘因，故能穩定學校師資、解決流動率過高的問題。另外，專聘教師皆具教師證，師資素質具一定程度，由縣市政府指派學校，也能避免偏鄉難聘得合適教師的現況，進一步保障偏鄉孩童的學習品質及受教權益。國教署表示，目前正在依《偏遠地區學校教育發展條例》制定相關子法，待施行細則研擬完成，才會開始甄選專聘教師。</p>
+        <p>「專聘教師是工作的派遣化。」張旭政持相反立場，認為讓沒有教師證、非典型雇用的代理教師法制化，不僅不利偏鄉師資發展，更排擠正式教師員額。他強調，如果要健全偏鄉師資，應該用正式教師補足偏鄉的缺額，才能真正解決問題。</p>
+        <p>由於專聘教師前六年的聘約仍是一年或兩年，與代理教師一樣需要爭取續聘機會。張旭政認為，國家不該用一年、兩年一聘的控制方式，來確保對國家效忠，「利用對工作不安的恐懼感來讓你多做事、不敢違抗，這怎麼講都不對。」</p>
+
+        <h2 class="title">解方4：偏鄉合聘教師　確保師資多元性</h2>
+        <p>偏鄉地區長期缺乏專長教師授課，往往於音樂、藝術等特殊領域發生「有排課卻無專業老師」的問題。對此，教育部研擬多校「合聘」正式教師機制，並於105年訂定《直轄市縣（市）立國民小學及國民中學合聘專任教師應注意事項》，藉由國中、國小跨教育階段合聘教師，滿足偏遠地區學校對特殊領域師資的需求，保障學生受教權益。時至105學年度時，全國已有國中60名、國小9名的合聘教師。</p>
+        <p>合聘教師雖可解決偏鄉師資不足問題，不過甘邵文指出，實際上會遇到教師意願不足的可能性，許多教師可能因住家距離的關係而拒絕合聘。國教署則表示，在推動合聘機制時，確實發現某些地方政府並未給予合聘教師交通費，以及合聘學校距離過遠的問題，現已要求地方政府辦理合聘時，必須先就相關事項訂定協議書，以保障合聘教師權益。</p>
+
+
+        <h2 class="title">創建公平環境　教育不該打折</h2>
+        <p>少子化的趨勢下，確實需要透過聘請代理教師管控缺額，但既然多數代理教師是占據編制內實缺，工作內容幾與正式教師無異，即便不能給予永業制的工作保障，政府仍應盡速落實以完整聘期聘用代理教師，並得依累積年資調整薪水等基本待遇。</p>
+        <p style="margin-bottom: 60px;">「老師是生命影響生命的職業。」這是張恒睿多年與學生互動的心得。適度提升代理教師待遇，創造穩定的師資結構，獲利的絕對還有教學現場的孩子。在現今，教育仍被視為翻轉階級的重要途徑，政府有責讓盡心付出的老師無後顧之憂，提供每位學生平等的學習機會。特別對於偏鄉而言，遇到願意久留的好老師不該是種幸運。</p>
+
+
+
+        <div class="related-text">延伸閱讀</div>
+        <ul class="related-items">
+            <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016/teacher02.html" target="_blank">
+                <li class="related-item">
+                    <img src="chart03.jpg" alt="leading image of this article" />
+                    <div>【當老師不再是鐵飯碗 2】代理教師陷重重困境　燃燒熱忱何以為繼</div>
+                </li>
+            </a>
+            <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016/teacher03.html" target="_blank">
+                <li class="related-item">
+                    <img src="photo02.JPG" alt="leading image of this article" />
+                    <div>【當老師不再是鐵飯碗 3】提升代理教師待遇　保障學生受教權</div>
+                </li>
+            </a>
+        </ul>
+    </article>
+    <footer style="font-family: Microsoft JhengHei,  Noto Sans TC , PingFang TC , Apple LiGothic Medium , Roboto, Lucida
+    Grande, Lucida Sans Unicode , sans-serif">
+        <figure class="footer-bg computer" width="100%; ">
+            <img src="電腦版footer.png" alt="footer" width="100%" />
+
+            <b class="about-us">
+                關於我們
+            </b>
+            <div class="about-us-word">
+                <p>
+                    2018年6月《爆肝者》正式上線，稟持熬夜、不睡、等天亮的精神，為法賢努力當個披星戴月的小粉絲，共同畫下最美好的夏日篇章，我們愛老師！
+                </p>
+            </div>
+            <div class="click-to-know">
+                <a href="https://joy2bitme.github.io/aboutus/index.html" target="_self"><span style="padding-bottom:0.6px ; border-bottom-width: 1.5px ; 
+                    border-bottom-color: rgb(255, 104, 104) ; border-bottom-style : solid; color: rgb(255, 104, 104)">
+                        點我了解作者群
+                    </span></a>
+            </div>
+            <b class="contact-us">
+                聯絡我們
+            </b>
+            <div class="contact-us-word">
+                <p>
+                    地址：台北市文山區指南路二段64號 大勇樓312編輯室
+                </p>
+                <p>
+                    電話：02-29387084
+                </p>
+                <p>
+                    信箱：uonline@nccu.edu.tw
+                </p>
+            </div>
+        </figure>
+        <figure class="footer-bg phone" width="100%;">
+            <img src="手機版footer.png" alt="footer" width="100%" />
+            <a href="https://joy2bitme.github.io/aboutus/index.html" target="_self"><b class="about-us">
+                    關於我們
+                </b></a>
+            <div class="about-us-word">
+                <p>
+                    2018年6月《爆肝者》正式上線，稟持熬夜、不睡、等天亮的精神，為法賢努力當個披星戴月的小粉絲，共同畫下最美好的夏日篇章，我們愛老師！
+                </p>
+            </div>
+            <div class="click-to-know">
+                <a href="https://joy2bitme.github.io/aboutus/index.html" target="_self"><span
+                        style="padding-bottom:0.1px ; border-bottom-width: 1.5px ; 
+                        border-bottom-color: rgb(255, 104, 104) ; border-bottom-style : solid; color: rgb(255, 104, 104)">
+                        點我了解作者群
+                    </span></a>
+            </div>
+            <b class="contact-us">
+                聯絡我們
+            </b>
+            <div class="contact-us-word">
+                <p>
+                    地址：台北市文山區指南路二段64號 大勇樓312編輯室
+                </p>
+                <p>
+                    電話：02-29387084
+                </p>
+                <p>
+                    信箱：uonline@nccu.edu.tw
+                </p>
+            </div>
+        </figure>
+    </footer>
+
+
+
+
+</body>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121184139-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121184139-1');
+</script>
+<!-- Hotjar Tracking Code for https://wenrongchang.github.io/Crazy-all-nighter/1 -->
+<script>
+    (function (h, o, t, j, a, r) {
+        h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+        h._hjSettings = { hjid: 923854, hjsv: 6 };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script'); r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+</script>
+
+<script>
+    document.write("<style>.chart02 {zoom:" + (window.screen.width / 1920) * 0.8 + "!important;}</style>");
+</script>
+
+</html>
