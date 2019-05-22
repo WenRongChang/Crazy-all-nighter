@@ -114,22 +114,6 @@
 
         }
 
-        @media screen and (max-width:1023px) {
-            .chart01 {
-                display: none;
-            }
-
-            .chart02 {
-                display: none
-            }
-
-            .computer-chart {
-                display: none
-            }
-
-        }
-
-
         @media screen and (min-width:768px) and (max-width:1023px) {
             header {
                 width: 678px
@@ -173,6 +157,7 @@
                 margin-right: auto;
             }
         }
+
         body {
             font-family: "Microsoft JhengHei", "Noto Sans TC", "PingFang TC", "Apple LiGothic Medium", Roboto, "Lucida Grande", "Lucida Sans Unicode", sans-serif;
             background-color: #F1F1F1;
@@ -521,8 +506,27 @@
             position: absolute;
             width: 120%;
             height: 120%;
-            ;
         }
+
+        .chart_title{
+            margin:30 auto 0 auto ;
+            text-align: center;
+        }
+        @media screen and (max-width: 768px){
+            .chart_title>h2{
+                font-size: 20px
+            }
+            .video-block{
+                margin-bottom: 60px;
+            }
+        }
+        @media screen and (min-width: 768px){
+            .chart_title>h2{
+                font-size: 30px
+            }
+            
+        }
+
     </style>
 
 
@@ -583,6 +587,8 @@ background-color: #fff">
         </p>
 
         <h2 class="title">快速飆升的水果外銷　扣掉中國我們還剩什麼</h2>
+
+        
         <div class="video-block">
             <video controls muted loop autoplay>
                 <source type="video/mp4" src="最新圖表F.mp4">
@@ -590,7 +596,7 @@ background-color: #fff">
             </video>
         </div>
         <p>
-            根據中華民國進出口貿易統計，台灣水果（依照國際商品統一分類代碼，HS Code 08）去（2018）年外銷總額突破1億4千萬美元，創下1990年以來的新高，相較前（2017）年成長超過3千萬美元，幅度達28%。
+            根據中華民國進出口貿易統計，台灣水果去（2018）年外銷總額突破1億4千萬美元，創下1990年以來的新高，相較前（2017）年成長超過3千萬美元，幅度達28%。
         </p>
         <p>
             近年水果外銷市場看似蓬勃發展，但其實大部分的成長皆來自中國市場。以去年的成長額度為例，中國就佔去2千多萬美元，超過成長額度的7成。而現在台灣出口的水果，有超過7成5都是送往中國，對中國的依賴程度不斷攀升。
@@ -610,20 +616,22 @@ background-color: #fff">
         <p>因此，一個國家的農業發展攸關國家安全層次上的問題，無論一個國家的農業在全球經貿體系下的比較利益再低，仍應維持其基本運作與糧食自給率。</p>
         <p>然而當前台灣水果業對中國的出口依賴度高度上升，「甚至可以說過度集中在中國。」吳明澤進一步分析：「以前水果可能主要銷日本，剩下銷東南亞；但現在中國需求慢慢起來，加上政治上（兩岸友好單位）幫忙牽線的結果，農產品就慢慢往中國那邊靠。」
         </p>
-        <p style="margin-bottom:20px">台灣水果業近年來之所以對中國有高度依附現象，政治力在其中扮演著不可或缺的角色。</p>
-        <div style="position:relative;margin-bottom:80px">
-            <h2 style="position:absolute ;left: 33%">台灣水果依賴度歷年趨勢</h2>
+        <div class="chart_title">
+            <h2>台灣水果依賴度歷年趨勢</h2>
         </div>
         <iframe
             src="https://cdn.knightlab.com/libs/storyline/latest/embed/index.html?dataURL=https%3A%2F%2Fdocs.google.com%2Fspreadsheets%2Fd%2F1ZiJmKLaHXi7V3CDHT_Owzg01wAJ_162EROX0n0-bgZA%2Fedit%23gid%3D0&amp;dataYCol=data&amp;dataXCol=year&amp;dataDateFormat=%25Y&amp;chartDateFormat=%25Y&amp;chartYLabel=data&amp;sliderCardTitleCol=storycard&amp;sliderCardTextCol=text"
             style="width:100%;height:650px;" frameborder="0" marginwidth="0" marginheight="0" vspace="0"
             hspace="0"></iframe>
+
+        <p style="margin:-20 auto 50 auto">中國雖然從2004年就成為台灣最重要的貿易出口國，但占比自從2007年突破15％，成長幅度就逐漸趨緩，雙方供需狀況已大致穩定。然而台灣水果業是在2008年後才迅速飆高，呈現對中國高度依附現象，可見政治力在其中扮演著不可或缺的角色。</p>
+       
         
-            <div style="position:relative;margin-bottom:80px;margin-top: -30px">
-                <h2 style="position:absolute ;left: 35%">台灣總出口依賴度前10名</h2>
+            <div  class="chart_title">
+                <h2>台灣總出口依賴度前10名</h2>
             </div>
             <iframe src="https://plotdb.io/v/chart/22205" width="100%" height="600px" allowfullscreen="true" frameborder="0"></iframe>
-        <p style="margin-top:25px">
+        <p style="margin-top:35px">
             2004年，中國新任國家主席胡錦濤上任，當年適逢陳水扁連任總統，兩岸關係進入全新的對峙階段，中國當局認為在當時的政治局勢下，反獨工作比促統更重要，因此明確拒絕有台獨意識、背景的人士通商來往。</p>
         <p>而中國為進一步收服台灣民心，也制定了「三中」政策，針對對中國好感度不高的「中」南部、「中」低收入以及「中」小企業民眾進行攏絡，以爭取過去反對中國的民眾支持。</p>
         <p>因此，台灣中南部地區的農民就成為中國重點統戰對象，他們在2005年以「兩岸沒有實施大三通，導致農產品進出口過程中無法保鮮」為題發揮，迫使扁政府必須面對廣大農民與盤商的不滿與異議，不過當時的政府並沒有做出太大的妥協，台灣媒體對於兩岸民間農業經貿活動也多持負面態度。
@@ -634,17 +642,17 @@ background-color: #fff">
         <p style="margin-bottom:20px">
             根據農委會今年三月的最新數據顯示，台灣農產外銷產值前三名分別是鳳梨、釋迦以及芒果，而財政部關務署也指出，除了第三名芒果主要的出口地是日本、韓國以外，鳳梨和釋迦的主要出口地皆為中國，且近三年的依賴度都落在95%~98%。
         </p>
-        <div style="position:relative;margin-bottom:80px">
-            <h2 style="position:absolute ;left: 25%">台灣前三大外銷水果依賴中國市場程度</h2>
+        <div class="chart_title">
+            <h2>台灣前三大外銷水果依賴中國市場程度</h2>
         </div>
         <iframe src="https://plotdb.io/v/chart/22203" width="100%" height="600px" allowfullscreen="true" frameborder="0"></iframe>
 
-        <p style="margin-top:30px">可想而知，若中國市場有任何風吹草動，台灣水果產業都將為其所動搖。</p>
+        <p style="margin-top:35px">可想而知，若中國市場有任何風吹草動，台灣水果產業都將為其所動搖。</p>
         <p>而問題的關鍵就在於，兩岸的水果貿易並非建立在穩定、永續性高的自由市場經濟中，除了兩岸當前摧枯拉朽的政治關係外，近年來中國的經濟成長率逐漸停緩、美中貿易戰升溫，國際貨幣基金IMF即在最新的世界經濟展望報告中指出，這些因素將導致全球經濟惡化、不確定性提高。
         </p>
         <p style="margin-bottom:10px">「不管政治上、或中國本身經濟問題，對我們都會造成非常嚴重影響，」吳明澤指出：「甚至可能像日本以前一樣，（經濟）衰落一、二十年。」</p>
-        <div style="position:relative;margin-bottom:80px">
-            <h2 style="position:absolute ;left: 33%">兩岸水果進出口依賴度比較</h2>
+        <div class="chart_title">
+            <h2>兩岸水果進出口依賴度比較</h2>
         </div>
         <iframe src="https://plotdb.io/v/chart/22206" width="100%" height="600px" allowfullscreen="true"
             frameborder="0"></iframe>
@@ -654,10 +662,10 @@ background-color: #fff">
         <p>統計2009至2018十年內兩岸對彼此的水果出口／進口依賴度發現，中國對台灣水果的進口依賴度始終未超過總進口值的5%。就中國進口各項水果種類的資料顯示，東南亞、中南美洲各國家是將水果銷往中國的主力輸入區域。這些國家由於土地面積廣大，有計劃地種植水果農作，加之國內產業鏈早已建構起的專業生產線，因此能每年穩定出口大量、品質優良的熱帶水果。
         </p>
         <p>撇除政治意涵介入，單就經濟層面中的比較利益角度來看，台灣作為一水果出口國，若無法長期輸出品質穩定的水果作物，原先在中國進口貿易網絡就相對弱勢的地位，處境將會變得更加嚴峻，隨時可能被其他熱帶水果出口大國取代。</p>
-<p style="margin-bottom:10px">吳明澤也提到，當台灣對中國的貿易依賴度持續以飛快的速度上升、過度集中對岸市場，國內市場、產業結構也都慢慢調整到配合中國步調時，「一旦中國經濟崩潰，台灣失去那麼大、可以依賴的出口寶地，要再找到一個可以取代中國的市場非常困難，而且也不一定符合國內產業需求。」若想解決未來可能發生的窘境，就必須分散出口市場。唯有開啟新的外銷市場，才能分散風險，降低台灣對中國過高的出口依賴度。
+        <p style="margin-bottom:10px">吳明澤也提到，當台灣對中國的貿易依賴度持續以飛快的速度上升、過度集中對岸市場，國內市場、產業結構也都慢慢調整到配合中國步調時，「一旦中國經濟崩潰，台灣失去那麼大、可以依賴的出口寶地，要再找到一個可以取代中國的市場非常困難，而且也不一定符合國內產業需求。」若想解決未來可能發生的窘境，就必須分散出口市場。唯有開啟新的外銷市場，才能分散風險，降低台灣對中國過高的出口依賴度。
         </p>
-        <div style="position:relative;margin-bottom:80px">
-            <h2 style="position:absolute ;left: 32%">台灣水果外銷佔總產值比例圖</h2>
+        <div class="chart_title">
+            <h2>台灣水果外銷佔總產值比例圖</h2>
         </div>
         <iframe src="https://plotdb.io/v/chart/22204" width="100%" height="600px" allowfullscreen="true"
             frameborder="0"></iframe>
