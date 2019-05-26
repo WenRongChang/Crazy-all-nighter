@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <style>
+        .flex-container {
+            width: 100%;
+            margin-bottom: 30px;
+            background-color: lightgrey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        .card-img {
+            width: 100%;
+            margin: 0px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            width: 410px;
+            padding: 20px 12px 25px 12px;
+        }
+
+
+        .card-title {
+            color: black;
+            font-size: 26px;
+            font-weight: bold;
+
+        }
+
+        .card-desc {
+            color: #808080;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 35px;
+        }
+      </style>
+   </head>
+   <body>
+    <div class="flex-container">
+        <div class="card">
+            <figure class="card-img">
+                <img src="industry01.jpg" alt="no" width=100%>
+                </img></figure>
+            <h2 class="card-title">拉啦啦啦啦啦啦</h2>
+            <p class="card-desc">嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿</p>
+        </div>
+        <div class="card">
+            <figure class="card-img">
+                <img src="industry01.jpg" alt="no" width=100%>
+                </img></figure>
+            <h2 class="card-title">拉啦啦啦啦啦啦</h2>
+            <p class="card-desc">嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿</p>
+        </div>
+        <div class="card">
+            <figure class="card-img">
+                <img src="industry01.jpg" alt="no" width=100%>
+                </img></figure>
+            <h2 class="card-title">拉啦啦啦啦啦啦</h2>
+            <p class="card-desc">嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿</p>
+        </div>
+        <div class="card">
+            <figure class="card-img">
+                <img src="industry01.jpg" alt="no" width=100%>
+                </img></figure>
+            <h2 class="card-title">拉啦啦啦啦啦啦</h2>
+            <p class="card-desc">嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿</p>
+        </div>
+        <div class="card">
+            <figure class="card-img">
+                <img src="industry01.jpg" alt="no" width=100%>
+                </img></figure>
+            <h2 class="card-title">拉啦啦啦啦啦啦</h2>
+            <p class="card-desc">嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿</p>
+        </div>
+    </div>
+   </body>
+</html>
+   
