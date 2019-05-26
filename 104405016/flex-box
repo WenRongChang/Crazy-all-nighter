@@ -39,8 +39,9 @@
             font-weight: bold;
             margin-top: 35px;
         }
-      </style>
+    </style>
 </head>
+
 <body>
     <div class="flex-container">
         <div class="card">
@@ -80,5 +81,5 @@
         </div>
     </div>
 </body>
+
 </html>
-   
