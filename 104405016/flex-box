@@ -40,8 +40,8 @@
             margin-top: 35px;
         }
       </style>
-   </head>
-   <body>
+</head>
+<body>
     <div class="flex-container">
         <div class="card">
             <figure class="card-img">
@@ -79,6 +79,6 @@
             <p class="card-desc">嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿</p>
         </div>
     </div>
-   </body>
+</body>
 </html>
    
